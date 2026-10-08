@@ -95,7 +95,7 @@ for (const { data } of records.filter(({ data }) => data.type === 'claim' && dat
 if (supportedClaims.size !== 15) errors.push(`Release-Gate: 15 belegte Claims erwartet, gefunden ${supportedClaims.size}`);
 
 const policy = JSON.parse(fs.readFileSync(path.join(root, 'src', 'data', 'release-policy.json'), 'utf8'));
-if (policy.globalRobotsLock !== 'noindex, nofollow') errors.push('Globale Robots-Sperre ist nicht noindex, nofollow');
+if (policy.globalRobotsLock !== null) errors.push('Phase 4E.2: Globale Robots-Sperre muss aufgehoben sein');
 for (const [collection, uids] of Object.entries(policy.content)) {
   for (const uid of uids) if (!has(uid)) errors.push(`Release-Policy ${collection}: ${uid} fehlt`);
 }

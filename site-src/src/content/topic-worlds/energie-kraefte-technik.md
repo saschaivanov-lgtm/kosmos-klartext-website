@@ -20,4 +20,4 @@ review:
     date: '2026-10-04'
 ---
 
-Diese Themenwelt bündelt Wissenseinträge, Videos, Quellen und Projekte entlang zusammenhängender wissenschaftlicher Fragen. Alle neu migrierten Inhalte bleiben bis zur menschlichen Abnahme im lokalen Vorschaustatus.
+Diese Themenwelt bündelt Wissenseinträge, Videos, Quellen und Projekte entlang zusammenhängender wissenschaftlicher Fragen.

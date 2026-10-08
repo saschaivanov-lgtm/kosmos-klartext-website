@@ -1,8 +1,8 @@
 {
-  "version": "phase4d-3",
-  "candidateStatus": "CONDITIONAL GO – LEGAL/HUMAN REVIEW REQUIRED",
-  "generatedFor": "local-release-candidate",
-  "globalRobotsLock": "noindex, nofollow",
+  "version": "phase4e-2",
+  "candidateStatus": "V1 LIVE – INDEXING ENABLED",
+  "generatedFor": "production-launch",
+  "globalRobotsLock": null,
   "staticRoutes": [
     { "path": "/", "label": "Start", "robotsTarget": "index, follow", "sitemap": true, "search": false },
     { "path": "/entdecken/", "label": "Entdecken", "robotsTarget": "index, follow", "sitemap": true, "search": false, "nav": true },

@@ -4,7 +4,7 @@ import ContentCard from '@/components/ContentCard.astro';
 import { loadGraph } from '@/lib/graph';
 const graph = await loadGraph();
 ---
-<BaseLayout title="Entdecken" description="Themenwelten des fokussierten Kosmos-Klartext-V1-Korpus.">
-  <header class="page-hero"><div class="page-hero-inner shell"><span class="eyebrow">Orientierung</span><h1>Wissenschaft in Zusammenhängen entdecken</h1><p class="dek">Vier Themenwelten führen im V1-Freigabekandidaten zu drei eigenständigen Erklärungen. Leere oder noch nicht freigegebene Bereiche bleiben intern.</p></div></header>
+<BaseLayout title="Entdecken" description="Themenwelten des öffentlichen Kosmos-Klartext-Wissensnetzes.">
+  <header class="page-hero"><div class="page-hero-inner shell"><span class="eyebrow">Orientierung</span><h1>Wissenschaft in Zusammenhängen entdecken</h1><p class="dek">Vier Themenwelten führen zu drei eigenständigen, quellenbasierten Erklärungen.</p></div></header>
   <section class="section shell"><div class="section-heading"><h2>Themenwelten</h2></div><div class="mixed-grid">{graph.topicWorlds.map((entry) => <ContentCard entry={entry} />)}</div></section>
 </BaseLayout>

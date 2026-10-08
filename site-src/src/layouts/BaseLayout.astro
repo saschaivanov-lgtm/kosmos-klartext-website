@@ -24,7 +24,7 @@ const structuredData = {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
-    <meta name="robots" content={globalRobotsLock} />
+    <meta name="robots" content={globalRobotsLock ?? robotsTarget} />
     <meta name="kosmos-klartext-robots-target" content={robotsTarget} />
     <meta name="theme-color" content="#07121f" />
     <link rel="canonical" href={canonical.href} />

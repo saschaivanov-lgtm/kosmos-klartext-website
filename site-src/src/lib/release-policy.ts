@@ -9,7 +9,7 @@ const allowed = Object.fromEntries(
 ) as Record<CollectionKey, Set<string>>;
 
 export const releasePolicy = policy;
-export const globalRobotsLock = policy.globalRobotsLock as RobotsDirective;
+export const globalRobotsLock = policy.globalRobotsLock as RobotsDirective | null;
 export const navigation = policy.staticRoutes.filter((route) => 'nav' in route && route.nav);
 
 export function isReleased(collection: CollectionKey, uid: string): boolean {
