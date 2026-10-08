@@ -1,0 +1,10 @@
+uid: link-knowledge-video-magnetismus
+type: content_link
+fromUid: knowledge-eisen-kupfer-magnetismus
+toUid: video-youtube-pCFp_Z0MFSA
+relation: featured_video
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-03' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-03' }

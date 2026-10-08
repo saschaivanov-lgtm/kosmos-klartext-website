@@ -1,0 +1,12 @@
+uid: claim-copper-eddy-current-separate
+type: claim
+contentUid: knowledge-eisen-kupfer-magnetismus
+statement: Wirbelstrombremsung in bewegtem Kupfer ist ein anderer Mechanismus als statische ferromagnetische Anziehung.
+scientificCore: true
+scope: Leitfähiges Kupfer bei zeitlich veränderlichem Magnetfluss oder Relativbewegung zum Magnetfeld.
+limits: Keine quantitative Wirbelstromrechnung und keine Aussage über statische ferromagnetische Anziehung.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-03' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-03' }

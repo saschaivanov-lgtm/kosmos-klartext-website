@@ -1,0 +1,26 @@
+'uid': 'source-openstax-conduction-metals'
+'type': 'source_canonical'
+'slug': 'openstax-conduction-metals'
+'locale': 'de'
+'kind': 'book_chapter'
+'title': 'University Physics Volume 2, 9.2: Model of Conduction in Metals'
+'authors':
+  - 'Samuel J. Ling'
+  - 'Jeff Sanny'
+  - 'William Moebs'
+'year': 2016
+'publisher': 'OpenStax'
+'url': 'https://openstax.org/books/university-physics-volume-2/pages/9-2-model-of-conduction-in-metals'
+'summary': 'Driftbewegung und vereinfachtes Leitungsmodell.'
+'limits': 'Didaktisches Modell; keine mikroskopische Festkörpertheorie.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-04'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-04'

@@ -1,0 +1,18 @@
+uid: source-openstax-2016-magnetism-matter
+type: source_canonical
+slug: openstax-2016-magnetism-in-matter
+locale: de
+kind: reference_work
+title: Magnetism in Matter
+authors:
+  - OpenStax
+year: 2016
+publisher: University Physics Volume 2, section 12.7
+url: https://openstax.org/books/university-physics-volume-2/pages/12-7-magnetism-in-matter
+summary: Lehrbuchüberblick zu Dia-, Para- und Ferromagnetismus sowie zur Rolle magnetischer Domänen.
+limits: Didaktische Sekundärquelle; ersetzt für Spezialaussagen keine Primärliteratur und liefert keine materialspezifische Kraftberechnung.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-03' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-03' }

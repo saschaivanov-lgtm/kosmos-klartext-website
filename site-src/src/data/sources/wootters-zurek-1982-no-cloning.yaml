@@ -1,0 +1,27 @@
+'uid': 'source-wootters-zurek-1982-no-cloning'
+'type': 'source_canonical'
+'slug': 'wootters-zurek-1982-no-cloning'
+'locale': 'de'
+'kind': 'paper'
+'title': 'A single quantum cannot be cloned'
+'authors':
+  - 'William K. Wootters'
+  - 'Wojciech H. Zurek'
+'year': 1982
+'publisher': 'Nature 299, 802–803'
+'url': 'https://doi.org/10.1038/299802a0'
+'identifiers':
+  'doi': '10.1038/299802a0'
+'summary': 'No-Cloning-Theorem für unbekannte Quantenzustände.'
+'limits': 'Schließt nicht jede Form zustandsabhängiger oder näherungsweiser Reproduktion aus.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-04'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-04'

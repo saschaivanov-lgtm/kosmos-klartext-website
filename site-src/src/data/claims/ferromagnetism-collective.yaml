@@ -1,0 +1,12 @@
+uid: claim-ferromagnetism-collective
+type: claim
+contentUid: knowledge-eisen-kupfer-magnetismus
+statement: Ferromagnetismus in Eisen ist ein kollektiver Vielteilchenzustand und nicht die bloße Summe isolierter Elektronenmomente.
+scientificCore: true
+scope: Ferromagnetische Ordnung in festem Eisen.
+limits: Keine vollständige Bandstrukturrechnung und keine Übertragung auf beliebige Eisenlegierungen.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-03' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-03' }

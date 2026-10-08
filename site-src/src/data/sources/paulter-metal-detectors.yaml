@@ -1,0 +1,22 @@
+uid: source-paulter-2001-metal-detectors
+type: source_canonical
+slug: paulter-2001-metal-detectors
+locale: de
+kind: technical_report
+title: Users' Guide for Hand-Held and Walk-Through Metal Detectors
+authors:
+  - A. G. Lieberman
+  - Kathleen M. Higgins
+  - Nicholas G. Paulter Jr.
+year: 2001
+publisher: National Institute of Standards and Technology / NIJ
+url: https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=30185
+identifiers:
+  report: NIJ Guide 600-00
+summary: Technischer Leitfaden mit einer praxisnahen Einordnung magnetischer Materialeigenschaften; reines Eisen wird ferromagnetisch, Kupfer diamagnetisch klassifiziert.
+limits: Die Beispiele zur Leitfähigkeit kontrollieren Eisen und Kupfer nicht als direkten Haftversuch; Permeabilität hängt außerdem von Probe und Materialhistorie ab.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-03' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-03' }

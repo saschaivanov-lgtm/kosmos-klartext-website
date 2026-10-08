@@ -1,0 +1,26 @@
+'uid': 'source-feynman-lectures-ii-27'
+'type': 'source_canonical'
+'slug': 'feynman-lectures-ii-27'
+'locale': 'de'
+'kind': 'book_chapter'
+'title': 'The Feynman Lectures on Physics, Volume II, Chapter 27'
+'authors':
+  - 'Richard P. Feynman'
+  - 'Robert B. Leighton'
+  - 'Matthew Sands'
+'year': 1964
+'publisher': 'California Institute of Technology'
+'url': 'https://www.feynmanlectures.caltech.edu/II_27.html'
+'summary': 'Elektromagnetischer Energiefluss und Poynting-Vektor im Stromkreis.'
+'limits': 'Lehrbuchdarstellung; keine vollständige Modellierung eines konkreten Aufbaus.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-04'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-04'

@@ -1,0 +1,12 @@
+'uid': 'link-phase4b-032'
+'type': 'content_link'
+'fromUid': 'topic-energieerhaltung'
+'toUid': 'knowledge-batterie-lampe'
+'relation': 'contains'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

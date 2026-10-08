@@ -1,0 +1,55 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import ContentCard from '@/components/ContentCard.astro';
+import RelatedContent from '@/components/RelatedContent.astro';
+import { loadGraph } from '@/lib/graph';
+import { isReleased } from '@/lib/release-policy';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('topicWorlds', ({ data }) => isReleased('topicWorlds', data.uid));
+  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const graph = await loadGraph();
+const related = graph.linked(entry.data.uid);
+const worldTopics = graph.topics.filter((item) => item.data.worldIds.includes(entry.data.uid));
+const topicUids = new Set(worldTopics.map((item) => item.data.uid));
+const knowledge = graph.knowledge.filter((item) => item.data.topicIds.some((uid: string) => topicUids.has(uid)));
+const videos = graph.videos.filter((item) => item.data.topicIds.some((uid: string) => topicUids.has(uid)));
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.summary}>
+  <header class="page-hero">
+    <div class="page-hero-inner shell">
+      <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Themenwelten' }, { label: entry.data.title }]} />
+      <span class="eyebrow">Themenwelt</span>
+      <h1>{entry.data.title}</h1>
+      <p class="dek">{entry.data.leadQuestion}</p>
+      <div class="graph-path" aria-label="Wissenspfad">
+        <span class="graph-node">Themenwelt</span><span class="graph-arrow">→</span><span class="graph-node">{worldTopics.length} Themen</span><span class="graph-arrow">→</span><span class="graph-node">{knowledge.length} Erklärungen</span><span class="graph-arrow">→</span><span class="graph-node">Quellen</span>
+      </div>
+    </div>
+  </header>
+  <section class="section shell">
+    <div class="article-shell">
+      <article class="prose">
+        <Content />
+        <h2>Themen in dieser Welt</h2>
+        <ul>{worldTopics.map((item) => <li><a href={`/entdecken/themen/${item.data.slug}/`}>{item.data.title}</a> – {item.data.summary}</li>)}</ul>
+      </article>
+      <aside class="article-aside">
+        <div class="aside-card"><h2>In dieser Welt</h2><p>{worldTopics.length} Themen<br />{knowledge.length} Wissenseinträge<br />{videos.length} Videos</p></div>
+        <div class="aside-card"><h2>Status</h2><p>Lokale V1-Vorschau. Neue Inhalte warten auf menschliche Freigabe.</p></div>
+      </aside>
+    </div>
+    <div class="mixed-grid" style="margin-top: 4rem">
+      {knowledge.slice(0, 6).map((item) => <ContentCard entry={item} />)}
+      {videos.slice(0, 3).map((item) => <ContentCard entry={item} />)}
+    </div>
+    <RelatedContent items={related} />
+  </section>
+</BaseLayout>

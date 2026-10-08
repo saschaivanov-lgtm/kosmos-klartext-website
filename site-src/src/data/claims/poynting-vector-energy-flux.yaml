@@ -1,0 +1,12 @@
+uid: claim-poynting-vector-energy-flux
+type: claim
+contentUid: knowledge-batterie-lampe
+statement: Der Poynting-Vektor beschreibt die lokale Flussdichte elektromagnetischer Energie und steht mit der lokalen Energieerhaltung in Beziehung.
+scientificCore: true
+scope: Klassische Elektrodynamik.
+limits: Die Aufteilung und Interpretation lokaler Energieflüsse erfordert die vollständige Feldlösung und festgelegte Randbedingungen.
+workflowState: review_ready
+visibility: preview
+review:
+  scientific: { status: pending }
+  editorial: { status: pending }

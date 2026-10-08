@@ -1,0 +1,15 @@
+'uid': 'cs-knowledge-quanteninformation-wootters-zurek-1982-no-cloning'
+'type': 'content_source'
+'contentUid': 'knowledge-quanteninformation'
+'sourceUid': 'source-wootters-zurek-1982-no-cloning'
+'role': 'supports'
+'claimUids':
+  - 'claim-unknown-quantum-state-no-cloning'
+'locator': 'Abstract und S. 802–803, insbesondere die Linearitätsargumentation in Gl. (1)–(4).'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

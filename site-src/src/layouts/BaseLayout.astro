@@ -1,0 +1,54 @@
+---
+import '@/styles/global.css';
+import SiteHeader from '@/components/SiteHeader.astro';
+import SiteFooter from '@/components/SiteFooter.astro';
+import { globalRobotsLock, robotsTargetForPath } from '@/lib/release-policy';
+interface Props { title: string; description: string; image?: string; pageType?: 'website' | 'article' }
+const { title, description, image = '/assets/brand/kk-logo-full-480.jpg', pageType = 'website' } = Astro.props;
+const pageTitle = title === 'Kosmos Klartext' ? title : `${title} · Kosmos Klartext`;
+const canonical = new URL(Astro.url.pathname, 'https://kosmosklartext.de');
+const socialImage = new URL(image, 'https://kosmosklartext.de');
+const robotsTarget = robotsTargetForPath(Astro.url.pathname);
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': pageType === 'article' ? 'Article' : 'WebPage',
+  name: pageTitle, description, url: canonical.href,
+  isPartOf: { '@type': 'WebSite', name: 'Kosmos Klartext', url: 'https://kosmosklartext.de/' },
+  publisher: { '@type': 'Organization', name: 'Kosmos Klartext', logo: { '@type': 'ImageObject', url: 'https://kosmosklartext.de/assets/brand/kk-logo-full-480.jpg' } }
+};
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="robots" content={globalRobotsLock} />
+    <meta name="kosmos-klartext-robots-target" content={robotsTarget} />
+    <meta name="theme-color" content="#07121f" />
+    <link rel="canonical" href={canonical.href} />
+    <meta property="og:type" content={pageType} />
+    <meta property="og:site_name" content="Kosmos Klartext" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content={socialImage.href} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage.href} />
+    <link rel="icon" href="/assets/brand/kk-logo-compact-384.jpg" type="image/jpeg" />
+    <link rel="alternate" type="application/rss+xml" title="Kosmos Klartext" href="/feed.xml" />
+    <title>{pageTitle}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+    <SiteHeader />
+    <main id="main-content">
+      <slot />
+    </main>
+    <SiteFooter />
+  </body>
+</html>

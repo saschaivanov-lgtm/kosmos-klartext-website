@@ -1,0 +1,12 @@
+'uid': 'link-phase4b-046'
+'type': 'content_link'
+'fromUid': 'knowledge-eisen-kupfer-magnetismus'
+'toUid': 'video-youtube-pCFp_Z0MFSA'
+'relation': 'featured_video'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

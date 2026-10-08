@@ -1,0 +1,32 @@
+---
+import { routeFor, type GraphEntry } from '@/lib/graph';
+interface Props { items: Array<{ source: GraphEntry; relation: GraphEntry }> }
+const { items } = Astro.props;
+const roleLabels: Record<string, string> = {
+  supports: 'Belegt Kernaussage',
+  background: 'Hintergrund',
+  definition: 'Definition',
+  limitation: 'Einordnung'
+};
+---
+
+<section class="sources-panel" aria-labelledby="sources-heading">
+  <div class="section-heading">
+    <span class="eyebrow">Quellentransparenz</span>
+    <h2 id="sources-heading">Belege zu diesem Inhalt</h2>
+    <p>Jede Quelle wird nur einmal gespeichert. Verwendungszweck und Grenzen bleiben an jeder Verknüpfung sichtbar.</p>
+  </div>
+  {items.length > 0 ? <ol class="source-list">
+    {items.map(({ source, relation }, index) => (
+      <li>
+        <div class="source-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</div>
+        <div>
+          <span class="badge">{roleLabels[relation.data.role] ?? relation.data.role}</span>
+          <h3><a href={routeFor(source)}>{source.data.title}</a></h3>
+          <p>{source.data.authors.join(', ')} · {source.data.year} · {source.data.publisher}</p>
+          <small>{relation.data.locator}</small>
+        </div>
+      </li>
+    ))}
+  </ol> : <p class="empty-note">Für diese lokale Vorschauseite sind noch keine kanonischen Quellenbeziehungen freigegeben. Offene Quellenlücken werden auf der Inhaltsseite benannt.</p>}
+</section>

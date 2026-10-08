@@ -1,0 +1,12 @@
+uid: claim-teleportation-destroys-input-state
+type: claim
+contentUid: knowledge-quanteninformation
+statement: Im Teleportationsprotokoll wird der Eingangszustand bei der Messung zerstört; beim Empfänger entsteht erst nach der klassischen Mitteilung eine rekonstruierbare Replik des Zustands.
+scientificCore: true
+scope: Ideales Protokoll nach Bennett et al. 1993.
+limits: „Zerstört“ bezeichnet den Quantenzustand im Protokoll, nicht die Vernichtung des materiellen Trägers.
+workflowState: review_ready
+visibility: preview
+review:
+  scientific: { status: pending }
+  editorial: { status: pending }

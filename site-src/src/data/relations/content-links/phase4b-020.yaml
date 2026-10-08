@@ -1,0 +1,12 @@
+'uid': 'link-phase4b-020'
+'type': 'content_link'
+'fromUid': 'tw-information-erkenntnis-grenzen'
+'toUid': 'topic-quanteninformation'
+'relation': 'contains'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

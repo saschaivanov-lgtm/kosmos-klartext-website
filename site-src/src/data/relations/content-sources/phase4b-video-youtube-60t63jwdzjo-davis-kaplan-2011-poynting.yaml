@@ -1,0 +1,14 @@
+'uid': 'cs-video-youtube-60t63jwdzjo-davis-kaplan-2011-poynting'
+'type': 'content_source'
+'contentUid': 'video-youtube-60T63JwDZjo'
+'sourceUid': 'source-davis-kaplan-2011-poynting'
+'role': 'background'
+'claimUids': []
+'locator': 'Verwendung gemäß freigegebenem Launch-Korpus und geprüftem Quellenpaket; Detail-Lokatoren vor Veröffentlichung redaktionell bestätigen.'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

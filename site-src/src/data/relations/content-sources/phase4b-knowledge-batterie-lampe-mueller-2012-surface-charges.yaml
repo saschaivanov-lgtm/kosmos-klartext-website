@@ -1,0 +1,15 @@
+'uid': 'cs-knowledge-batterie-lampe-mueller-2012-surface-charges'
+'type': 'content_source'
+'contentUid': 'knowledge-batterie-lampe'
+'sourceUid': 'source-mueller-2012-surface-charges'
+'role': 'supports'
+'claimUids':
+  - 'claim-surface-charges-shape-field'
+'locator': 'Abstract; S. 782–783 zur Rolle von Oberflächenladungen; Abb. 1–4 mit zugehöriger Diskussion der Feld- und Potentialverteilungen.'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

@@ -1,0 +1,14 @@
+'uid': 'cs-video-youtube-60t63jwdzjo-mueller-2012-surface-charges'
+'type': 'content_source'
+'contentUid': 'video-youtube-60T63JwDZjo'
+'sourceUid': 'source-mueller-2012-surface-charges'
+'role': 'background'
+'claimUids': []
+'locator': 'Verwendung gemäß freigegebenem Launch-Korpus und geprüftem Quellenpaket; Detail-Lokatoren vor Veröffentlichung redaktionell bestätigen.'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

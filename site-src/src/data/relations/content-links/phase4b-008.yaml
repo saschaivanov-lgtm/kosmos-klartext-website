@@ -1,0 +1,12 @@
+'uid': 'link-phase4b-008'
+'type': 'content_link'
+'fromUid': 'tw-energie-kraefte-technik'
+'toUid': 'topic-stromkreise-felder'
+'relation': 'contains'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

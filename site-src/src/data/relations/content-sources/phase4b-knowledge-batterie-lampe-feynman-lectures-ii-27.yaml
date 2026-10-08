@@ -1,0 +1,16 @@
+'uid': 'cs-knowledge-batterie-lampe-feynman-lectures-ii-27'
+'type': 'content_source'
+'contentUid': 'knowledge-batterie-lampe'
+'sourceUid': 'source-feynman-lectures-ii-27'
+'role': 'supports'
+'claimUids':
+  - 'claim-poynting-vector-energy-flux'
+  - 'claim-resistor-field-energy-entry'
+'locator': 'Kap. 27, §27-2, Gl. (27.2) und (27.15)–(27.17); §27-5, Beispiel des Widerstandsdrahts und Abb. 27-5.'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

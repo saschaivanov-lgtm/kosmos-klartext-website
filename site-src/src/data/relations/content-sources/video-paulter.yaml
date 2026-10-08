@@ -1,0 +1,12 @@
+uid: cs-video-paulter
+type: content_source
+contentUid: video-youtube-pCFp_Z0MFSA
+sourceUid: source-paulter-2001-metal-detectors
+role: background
+claimUids: []
+locator: Materialklassifikation als Hintergrund zum Video
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-03' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-03' }

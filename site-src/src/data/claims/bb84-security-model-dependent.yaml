@@ -1,0 +1,12 @@
+uid: claim-bb84-security-model-dependent
+type: claim
+contentUid: knowledge-quanteninformation
+statement: Für BB84 lässt sich unter den im Sicherheitsbeweis festgelegten Annahmen durch Fehlerkorrektur und Privacy Amplification ein geheimer Schlüssel gewinnen.
+scientificCore: true
+scope: Theoretisches BB84-Modell des Beweises von Shor und Preskill.
+limits: Der Beweis zertifiziert keine konkrete Implementierung und deckt nicht automatisch Seitenkanäle oder fehlerhafte Geräte ab.
+workflowState: review_ready
+visibility: preview
+review:
+  scientific: { status: pending }
+  editorial: { status: pending }

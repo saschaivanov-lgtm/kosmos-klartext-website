@@ -1,0 +1,23 @@
+---
+import { routeFor, relationLabel, type LinkedEntry } from '@/lib/graph';
+interface Props { items: LinkedEntry[]; title?: string }
+const { items, title = 'Im Wissensnetz weitergehen' } = Astro.props;
+---
+
+{items.length > 0 && (
+  <section class="related-section" aria-labelledby="related-heading">
+    <div class="section-heading">
+      <span class="eyebrow">Automatisch verknüpft</span>
+      <h2 id="related-heading">{title}</h2>
+    </div>
+    <div class="related-grid">
+      {items.map(({ entry, relation, direction }) => (
+        <a class="related-card" href={routeFor(entry)}>
+          <span>{relationLabel(relation, direction)}</span>
+          <strong>{entry.data.title}</strong>
+          <small>{entry.data.summary ?? entry.data.dek}</small>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

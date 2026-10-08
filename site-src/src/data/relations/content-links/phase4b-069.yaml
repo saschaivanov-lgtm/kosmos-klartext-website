@@ -1,0 +1,12 @@
+'uid': 'link-phase4b-069'
+'type': 'content_link'
+'fromUid': 'knowledge-quanteninformation'
+'toUid': 'video-youtube-hOwwIheuYig'
+'relation': 'featured_video'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

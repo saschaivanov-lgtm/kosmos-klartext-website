@@ -1,0 +1,12 @@
+uid: claim-teleportation-shared-entanglement-classical-message
+type: claim
+contentUid: knowledge-quanteninformation
+statement: Das ursprüngliche Quantenteleportationsprotokoll benötigt vorab geteilte Verschränkung, eine gemeinsame Messung beim Sender und die Übermittlung des Messergebnisses über einen klassischen Kanal.
+scientificCore: true
+scope: Ideales Teleportationsprotokoll für einen unbekannten Qubit-Zustand.
+limits: Experimentelle Verluste, Rauschen und unvollständige Verschränkung sind nicht Teil dieser Protokollbeschreibung.
+workflowState: review_ready
+visibility: preview
+review:
+  scientific: { status: pending }
+  editorial: { status: pending }

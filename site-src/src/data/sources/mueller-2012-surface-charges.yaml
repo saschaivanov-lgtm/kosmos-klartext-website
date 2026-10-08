@@ -1,0 +1,26 @@
+'uid': 'source-mueller-2012-surface-charges'
+'type': 'source_canonical'
+'slug': 'mueller-2012-surface-charges'
+'locale': 'de'
+'kind': 'paper'
+'title': 'A semiquantitative treatment of surface charges in DC circuits'
+'authors':
+  - 'Rainer Müller'
+'year': 2012
+'publisher': 'American Journal of Physics 80, 782–788'
+'url': 'https://doi.org/10.1119/1.4731722'
+'identifiers':
+  'doi': '10.1119/1.4731722'
+'summary': 'Oberflächenladungen in Gleichstromkreisen.'
+'limits': 'Semiquantitatives Modell; Geometrie und Randbedingungen bleiben wesentlich.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-04'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-04'

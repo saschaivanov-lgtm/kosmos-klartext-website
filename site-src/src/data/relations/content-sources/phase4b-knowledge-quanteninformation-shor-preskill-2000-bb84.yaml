@@ -1,0 +1,15 @@
+'uid': 'cs-knowledge-quanteninformation-shor-preskill-2000-bb84'
+'type': 'content_source'
+'contentUid': 'knowledge-quanteninformation'
+'sourceUid': 'source-shor-preskill-2000-bb84'
+'role': 'supports'
+'claimUids':
+  - 'claim-bb84-security-model-dependent'
+'locator': 'Abstract; S. 441–444, insbesondere Reduktion auf CSS-Codes, Fehlerkorrektur/Privacy Amplification und abschließende Sicherheitsargumentation.'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'

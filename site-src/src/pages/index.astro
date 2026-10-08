@@ -1,0 +1,39 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ContentCard from '@/components/ContentCard.astro';
+import ReviewStamp from '@/components/ReviewStamp.astro';
+import { loadGraph, routeFor, type GraphEntry } from '@/lib/graph';
+import { releasePolicy } from '@/lib/release-policy';
+
+const graph = await loadGraph();
+const featured = releasePolicy.featuredKnowledge.map((uid) => graph.byUid.get(uid)).filter((entry): entry is GraphEntry => Boolean(entry));
+const video = graph.byUid.get(releasePolicy.featuredVideo)!;
+const approvedExample = graph.byUid.get('knowledge-eisen-kupfer-magnetismus')!;
+---
+
+<BaseLayout title="Kosmos Klartext" description="Quellenbasierte Wissenschaftsplattform für verständliche Erklärungen, Videos, Projekte und verknüpftes Wissen.">
+  <section class="hero">
+    <div class="hero-atmosphere" aria-hidden="true">
+      <img class="hero-galaxy" src="/assets/brand/kk-banner-galaxy-640.jpg" alt="" width="516" height="613" />
+      <img class="hero-wave" src="/assets/brand/kk-banner-wave-900.jpg" alt="" width="1200" height="217" />
+    </div>
+    <div class="hero-inner shell">
+      <div><span class="eyebrow">Wissenschaft verstehen. Quellen nachvollziehen.</span><h1>Komplexe Wissenschaft. <em>Klar verbunden.</em></h1><p class="hero-lede">Kosmos Klartext verbindet fundierte Erklärungen, Videos, Projekte und Originalquellen zu einem nachvollziehbaren Wissensnetz – jenseits von Schlagzeilen und Kanalgrenzen.</p><div class="hero-actions"><a class="button primary" href="/entdecken/">Themen entdecken <span aria-hidden="true">→</span></a><a class="button secondary" href="/suche/">Wissensnetz durchsuchen</a></div></div>
+      <aside class="hero-proof" aria-label="Inhalt der Plattform"><span class="eyebrow">Öffentlicher V1-Freigabekandidat</span><strong>Drei Erklärungen. Vier Videos. Eine Quellenlogik.</strong><p>Der kleine Launch-Kern verbindet eigenständige Wissenseinträge mit geprüften Quellen, Themen und passenden Videos. Weitere Inhalte bleiben intern.</p><div class="proof-row" aria-label="Inhaltstypen"><span>Wissen</span><span>Videos</span><span>Quellen</span></div></aside>
+    </div>
+  </section>
+
+  <section class="section shell" aria-labelledby="worlds-heading">
+    <div class="section-heading"><span class="eyebrow">Orientierung</span><h2 id="worlds-heading">Vier Themenwelten, ein zusammenhängender Kosmos</h2><p>Die Plattform beginnt mit wissenschaftlichen Fragen – nicht mit einem Kanalarchiv.</p></div>
+    <div class="world-grid">{graph.topicWorlds.map((world, index) => <a class:list={['world-card', { featured: index === 0 }]} href={routeFor(world)}><div><span class="index">{String(index + 1).padStart(2, '0')} / THEMENWELT</span><h3>{world.data.title}</h3><p>{world.data.leadQuestion}</p></div><span class="status-pill">Erkunden</span></a>)}</div>
+  </section>
+
+  <section class="section shell" aria-labelledby="mixed-heading">
+    <div class="section-heading"><span class="eyebrow">Einstiege ins Wissensnetz</span><h2 id="mixed-heading">Lesen, einordnen, weiterdenken</h2><p>Jede Erklärung bleibt eigenständig und führt gezielt zu Videos, Projekten und Quellen weiter.</p></div>
+    <div class="mixed-grid">{featured.map((entry) => <ContentCard entry={entry} />)}</div>
+  </section>
+
+  <section class="section dark-section" aria-labelledby="trust-heading"><div class="trust-grid shell"><div class="section-heading invert"><span class="eyebrow">Vertrauen durch Nachvollziehbarkeit</span><h2 id="trust-heading">Nicht nur erklärt. Belegt, eingeordnet, geprüft.</h2><p>Quellen sind eigenständige Objekte mit Aussagebereich und Grenzen. Neue Seiten bleiben sichtbar in Prüfung, bis ein Mensch sie freigibt.</p></div><div class="principle-list"><div class="principle"><strong>Claims statt Bauchgefühl</strong><p>Kernaussagen können gezielt mit Quellen verbunden werden.</p></div><div class="principle"><strong>Grenzen sichtbar</strong><p>Gesichertes Wissen, aktive Forschung und externe Hypothesen werden getrennt.</p></div><div class="principle"><strong>Menschliche Freigabe</strong><p>Automatisierung bereitet vor; wissenschaftliche Veröffentlichung bleibt redaktionell kontrolliert.</p></div><ReviewStamp review={approvedExample.data.review} /></div></div></section>
+
+  <section class="section shell" aria-labelledby="video-heading"><div class="feature-video"><img src={video.data.thumbnail.src} alt={video.data.thumbnail.alt} width="1280" height="720" /><div class="feature-copy"><span class="eyebrow">Video als ein Format unter mehreren</span><h2 id="video-heading">{video.data.title}</h2><p>{video.data.dek}</p><a class="button primary" href={routeFor(video)}>Video & Einordnung öffnen</a></div></div></section>
+</BaseLayout>

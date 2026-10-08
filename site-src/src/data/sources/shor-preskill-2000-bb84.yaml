@@ -1,0 +1,28 @@
+'uid': 'source-shor-preskill-2000-bb84'
+'type': 'source_canonical'
+'slug': 'shor-preskill-2000-bb84'
+'locale': 'de'
+'kind': 'paper'
+'title': 'Simple Proof of Security of the BB84 Quantum Key Distribution Protocol'
+'authors':
+  - 'Peter W. Shor'
+  - 'John Preskill'
+'year': 2000
+'publisher': 'Physical Review Letters 85, 441'
+'url': 'https://doi.org/10.1103/PhysRevLett.85.441'
+'identifiers':
+  'doi': '10.1103/PhysRevLett.85.441'
+  'arxiv': 'quant-ph/0003004'
+'summary': 'Sicherheitsbeweis für BB84 unter Modellannahmen.'
+'limits': 'Theoretischer Beweis; Implementierungsfehler bleiben außerhalb des idealen Modells.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-04'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-04'

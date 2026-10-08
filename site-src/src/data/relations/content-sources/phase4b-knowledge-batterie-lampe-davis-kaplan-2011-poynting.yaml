@@ -1,0 +1,15 @@
+'uid': 'cs-knowledge-batterie-lampe-davis-kaplan-2011-poynting'
+'type': 'content_source'
+'contentUid': 'knowledge-batterie-lampe'
+'sourceUid': 'source-davis-kaplan-2011-poynting'
+'role': 'supports'
+'claimUids':
+  - 'claim-circuit-geometry-shapes-flow'
+'locator': 'Abstract; arXiv:1207.2173, Abschnitte II–IV, insbesondere Gl. (8)–(14) und Abb. 3–6 zur räumlichen Verteilung des Poynting-Vektors im Ringstromkreis.'
+'workflowState': 'review_ready'
+'visibility': 'preview'
+'review':
+  'scientific':
+    'status': 'pending'
+  'editorial':
+    'status': 'pending'
