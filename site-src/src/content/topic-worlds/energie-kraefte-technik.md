@@ -20,4 +20,4 @@ review:
     date: '2026-10-04'
 ---
 
-Diese Themenwelt bündelt Wissenseinträge, Videos, Quellen und Projekte entlang zusammenhängender wissenschaftlicher Fragen.
+Diese Themenwelt verbindet die Fragen nach Energieerhaltung, Stromkreisen und Feldern mit den zugehörigen Erklärungen, Videos und Quellen.

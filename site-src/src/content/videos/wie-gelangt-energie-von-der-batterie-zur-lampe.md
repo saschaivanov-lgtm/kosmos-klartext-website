@@ -4,7 +4,7 @@
 'slug': 'wie-gelangt-energie-von-der-batterie-zur-lampe'
 'locale': 'de'
 'title': 'Wie gelangt Energie von der Batterie zur Lampe?'
-'dek': 'Vertiefte Video-Begleitseite mit Einordnung in das Wissensnetz.'
+'dek': 'Das Video zum Energiefluss von der Batterie zur Lampe – mit vertiefender Erklärung und verknüpften Quellen.'
 'platform': 'youtube'
 'platformId': '60T63JwDZjo'
 'publicUrl': 'https://www.youtube.com/watch?v=60T63JwDZjo'
@@ -17,7 +17,7 @@
   - 'topic-stromkreise-felder'
 'thumbnail':
   'src': '/assets/brand/kk-banner-galaxy-640.jpg'
-  'alt': 'Kosmos-Klartext-Markenmotiv als Platzhalter für das Video „Wie gelangt Energie von der Batterie zur Lampe?“'
+  'alt': 'Markenmotiv von Kosmos Klartext zum Video „Wie gelangt Energie von der Batterie zur Lampe?“'
 'chapters': []
 'workflowState': 'approved'
 'visibility': 'public'
@@ -39,7 +39,3 @@ Das Video verfolgt den Energieweg von der Batterie bis zum Glühdraht. Es trennt
 ## Begleitender Wissenseintrag
 
 Die kanonische Erklärung verbindet Batteriechemie, Oberflächenladungen, Leitergeometrie und Poynting-Vektor. Die Quellenbeziehungen werden zentral gepflegt und erscheinen dadurch auch auf dieser Begleitseite.
-
-## Kapitelstatus
-
-Verifizierte Kapitelmarken werden erst aus der Originalbeschreibung oder dem freigegebenen Produktionspaket übernommen; sie werden nicht nachträglich geschätzt.

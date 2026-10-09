@@ -4,7 +4,7 @@ type: topic
 slug: stromkreise-felder
 locale: de
 title: Stromkreise & Felder
-summary: Ein Knoten des Wissensnetzes zu Stromkreise & Felder.
+summary: Verbindet Wissenseintrag, Video und Quellen zum Energiefluss im Stromkreis.
 worldIds:
   - tw-energie-kraefte-technik
   - tw-licht-felder-materialien
@@ -21,4 +21,4 @@ review:
     date: '2026-10-04'
 ---
 
-Dieses Thema verbindet kanonische Erklärungen, Videos und geprüfte Quellen. Die Beziehungen werden aus strukturierten Inhaltsdaten erzeugt.
+Dieses Thema verbindet den Wissenseintrag und die Videobegleitung zum Energiefluss im Stromkreis mit den verwendeten Quellen.

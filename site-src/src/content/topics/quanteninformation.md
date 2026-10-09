@@ -4,7 +4,7 @@ type: topic
 slug: quanteninformation
 locale: de
 title: Quanteninformation
-summary: Ein Knoten des Wissensnetzes zu Quanteninformation.
+summary: Verbindet die Erklärung zur Quanteninformation mit Videos zu Teleportation und Verschränkung.
 worldIds:
   - tw-information-erkenntnis-grenzen
   - tw-materie-teilchen-quanten
@@ -21,4 +21,4 @@ review:
     date: '2026-10-04'
 ---
 
-Dieses Thema verbindet kanonische Erklärungen, Videos und geprüfte Quellen. Die Beziehungen werden aus strukturierten Inhaltsdaten erzeugt.
+Dieses Thema bündelt die Erklärung zur Quanteninformation, die Videos zu Teleportation und Verschränkung sowie die dort ausgewiesenen Quellen.

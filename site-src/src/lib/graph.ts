@@ -48,14 +48,22 @@ export async function loadGraph(options: { includeInternal?: boolean } = {}) {
 
   function linked(uid: string): LinkedEntry[] {
     const result: LinkedEntry[] = [];
+    const seen = new Set<string>();
+    const add = (item: LinkedEntry) => {
+      const key = `${item.entry.data.uid}:${item.relation}:${item.direction}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        result.push(item);
+      }
+    };
     for (const link of contentLinks) {
       if (link.data.fromUid === uid) {
         const entry = byUid.get(link.data.toUid);
-        if (entry) result.push({ entry, relation: link.data.relation, direction: 'outgoing' });
+        if (entry) add({ entry, relation: link.data.relation, direction: 'outgoing' });
       }
       if (link.data.toUid === uid) {
         const entry = byUid.get(link.data.fromUid);
-        if (entry) result.push({ entry, relation: link.data.relation, direction: 'incoming' });
+        if (entry) add({ entry, relation: link.data.relation, direction: 'incoming' });
       }
     }
     return result;

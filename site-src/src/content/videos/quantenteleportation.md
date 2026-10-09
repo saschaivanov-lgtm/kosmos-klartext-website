@@ -4,7 +4,7 @@
 'slug': 'quantenteleportation'
 'locale': 'de'
 'title': 'Quantenteleportation'
-'dek': 'Öffentliche Katalogseite mit verifizierten Metadaten und thematischen Verknüpfungen.'
+'dek': 'Das Video „Quantenteleportation“ im Wissensnetz – verknüpft mit der Erklärung zur Quanteninformation.'
 'platform': 'youtube'
 'platformId': 'hOwwIheuYig'
 'publicUrl': 'https://www.youtube.com/watch?v=hOwwIheuYig'
@@ -17,7 +17,7 @@
   - 'topic-quanteninformation'
 'thumbnail':
   'src': '/assets/brand/kk-banner-galaxy-640.jpg'
-  'alt': 'Kosmos-Klartext-Markenmotiv als Platzhalter für das Video „Quantenteleportation“'
+  'alt': 'Markenmotiv von Kosmos Klartext zum Video „Quantenteleportation“'
 'chapters': []
 'workflowState': 'approved'
 'visibility': 'public'
@@ -32,6 +32,6 @@
     'date': '2026-10-04'
 ---
 
-## Metadatenseite
+## Einordnung
 
-Diese Seite erschließt den öffentlichen Videokatalog. Eine vertiefte redaktionelle Begleitseite ist für diesen Titel noch nicht freigegeben. Vorhandene Verknüpfungen führen zu kanonischen Wissenseinträgen; fehlende Veröffentlichungsdaten und Kapitel werden nicht geschätzt.
+Diese Kurzbeschreibung ordnet das Video in das Wissensnetz ein. Die verknüpfte Erklärung vertieft die Grundlagen und Grenzen der Quanteninformation und führt zu den verwendeten Quellen.

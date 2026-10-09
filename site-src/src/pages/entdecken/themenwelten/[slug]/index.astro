@@ -20,17 +20,18 @@ const worldTopics = graph.topics.filter((item) => item.data.worldIds.includes(en
 const topicUids = new Set(worldTopics.map((item) => item.data.uid));
 const knowledge = graph.knowledge.filter((item) => item.data.topicIds.some((uid: string) => topicUids.has(uid)));
 const videos = graph.videos.filter((item) => item.data.topicIds.some((uid: string) => topicUids.has(uid)));
+const countLabel = (count: number, singular: string, plural: string) => `${count} ${count === 1 ? singular : plural}`;
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.summary}>
   <header class="page-hero">
     <div class="page-hero-inner shell">
-      <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Themenwelten' }, { label: entry.data.title }]} />
+      <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Entdecken', href: '/entdecken/' }, { label: entry.data.title }]} />
       <span class="eyebrow">Themenwelt</span>
       <h1>{entry.data.title}</h1>
       <p class="dek">{entry.data.leadQuestion}</p>
       <div class="graph-path" aria-label="Wissenspfad">
-        <span class="graph-node">Themenwelt</span><span class="graph-arrow">→</span><span class="graph-node">{worldTopics.length} Themen</span><span class="graph-arrow">→</span><span class="graph-node">{knowledge.length} Erklärungen</span><span class="graph-arrow">→</span><span class="graph-node">Quellen</span>
+        <span class="graph-node">Themenwelt</span><span class="graph-arrow">→</span><span class="graph-node">{countLabel(worldTopics.length, 'Thema', 'Themen')}</span><span class="graph-arrow">→</span><span class="graph-node">{countLabel(knowledge.length, 'Erklärung', 'Erklärungen')}</span><span class="graph-arrow">→</span><span class="graph-node">Quellen</span>
       </div>
     </div>
   </header>
@@ -42,7 +43,7 @@ const videos = graph.videos.filter((item) => item.data.topicIds.some((uid: strin
         <ul>{worldTopics.map((item) => <li><a href={`/entdecken/themen/${item.data.slug}/`}>{item.data.title}</a> – {item.data.summary}</li>)}</ul>
       </article>
       <aside class="article-aside">
-        <div class="aside-card"><h2>In dieser Welt</h2><p>{worldTopics.length} Themen<br />{knowledge.length} Wissenseinträge<br />{videos.length} Videos</p></div>
+        <div class="aside-card"><h2>In dieser Welt</h2><p>{countLabel(worldTopics.length, 'Thema', 'Themen')}<br />{countLabel(knowledge.length, 'Wissenseintrag', 'Wissenseinträge')}<br />{countLabel(videos.length, 'Video', 'Videos')}</p></div>
         <div class="aside-card"><h2>Qualitätssicherung</h2><p>Wissenschaftliche Inhalte erscheinen erst nach menschlicher Freigabe.</p></div>
       </aside>
     </div>

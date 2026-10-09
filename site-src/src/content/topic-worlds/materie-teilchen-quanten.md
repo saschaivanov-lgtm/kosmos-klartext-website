@@ -20,4 +20,4 @@ review:
     date: '2026-10-04'
 ---
 
-Diese Themenwelt bündelt Wissenseinträge, Videos, Quellen und Projekte entlang zusammenhängender wissenschaftlicher Fragen.
+Diese Themenwelt erschließt den Schwerpunkt Quanteninformation über eine geprüfte Erklärung, ergänzende Videos und die zugehörigen Originalquellen.

@@ -20,4 +20,4 @@ review:
     date: '2026-10-03'
 ---
 
-Diese Themenwelt verbindet beobachtbare Alltagsphänomene mit den physikalischen Mechanismen in Materialien. Der Vertical Slice beginnt mit Magnetismus und zeigt, wie Thema, Wissenseintrag, Video und Quellen als zusammenhängender Wissensgraph funktionieren.
+Diese Themenwelt verbindet beobachtbare Alltagsphänomene mit den physikalischen Mechanismen in Materialien. Magnetismus sowie Stromkreise und Felder führen von konkreten Fragen zu Erklärungen, Videos und Quellen.

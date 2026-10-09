@@ -20,16 +20,17 @@ const graph = await loadGraph();
 const sourceItems = graph.sourcesFor(entry.data.uid);
 const related = graph.linked(entry.data.uid);
 const published = entry.data.publishedAt ? new Intl.DateTimeFormat('de-DE', { dateStyle: 'long' }).format(new Date(`${entry.data.publishedAt}T12:00:00Z`)) : undefined;
+const pageTitle = `${entry.data.title} – Video`;
 ---
 
-<BaseLayout title={entry.data.title} description={entry.data.dek}>
+<BaseLayout title={pageTitle} description={entry.data.dek}>
   <header class="page-hero">
     <div class="page-hero-inner shell">
-      <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Mediathek' }, { label: entry.data.title }]} />
-      <span class="eyebrow">Video · {entry.data.pageMode === 'deep' ? 'Vertiefte Begleitseite' : 'Katalogseite'}</span>
+      <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Mediathek', href: '/mediathek/' }, { label: entry.data.title }]} />
+      <span class="eyebrow">Video · {entry.data.pageMode === 'deep' ? 'Vertiefte Begleitseite' : 'Kurzbeschreibung'}</span>
       <h1>{entry.data.title}</h1>
       <p class="dek">{entry.data.dek}</p>
-      <div class="meta-row">{published && <span>Veröffentlicht {published}</span>}<span>{entry.data.durationDisplay ?? 'Laufzeit nicht verifiziert'}</span><span>{entry.data.pageMode === 'deep' ? 'Vertieft' : 'Metadaten'}</span></div>
+      <div class="meta-row">{published && <span>Veröffentlicht {published}</span>}{entry.data.durationDisplay && <span>{entry.data.durationDisplay}</span>}<span>{entry.data.pageMode === 'deep' ? 'Vertiefte Begleitung' : 'Kurzbeschreibung'}</span></div>
     </div>
   </header>
   <section class="video-wrap shell">
@@ -39,17 +40,16 @@ const published = entry.data.publishedAt ? new Intl.DateTimeFormat('de-DE', { da
     <div class="article-shell">
       <article class="prose">
         <Content />
-        <h2>Kapitel</h2>
-        {entry.data.chapters.length > 0 ? <ol class="chapter-list">
+        {entry.data.chapters.length > 0 && <><h2>Kapitel</h2><ol class="chapter-list">
           {entry.data.chapters.map((chapter) => <li><time>{chapter.time}</time><span>{chapter.title}</span></li>)}
-        </ol> : <p class="empty-note">Noch keine verifizierten Kapitelmarken hinterlegt. Angaben werden nicht geschätzt.</p>}
+        </ol></>}
       </article>
       <aside class="article-aside">
         <ReviewStamp review={entry.data.review} />
-        <div class="aside-card"><h2>Kein Doppelinhalt</h2><p>Die vertiefende Erklärung liegt als eigenständiger Wissenseintrag vor und kann unabhängig vom Video aktualisiert werden.</p></div>
+        <div class="aside-card"><h2>Video und Wissenseintrag</h2><p>Der verknüpfte Wissenseintrag vertieft Begriffe, Zusammenhänge und Quellen unabhängig vom Video.</p></div>
       </aside>
     </div>
-    <SourceBlock items={sourceItems} />
+    {sourceItems.length > 0 && <SourceBlock items={sourceItems} />}
     <RelatedContent items={related} />
   </section>
 </BaseLayout>

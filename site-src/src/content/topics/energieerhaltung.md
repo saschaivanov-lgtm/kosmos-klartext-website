@@ -4,7 +4,7 @@ type: topic
 slug: energieerhaltung
 locale: de
 title: Energie & Erhaltung
-summary: Ein Knoten des Wissensnetzes zu Energie & Erhaltung.
+summary: Verbindet die Erklärung zum Energiefluss von der Batterie zur Lampe mit ihren Quellen.
 worldIds:
   - tw-energie-kraefte-technik
   - tw-information-erkenntnis-grenzen
@@ -21,4 +21,4 @@ review:
     date: '2026-10-04'
 ---
 
-Dieses Thema verbindet kanonische Erklärungen, Videos und geprüfte Quellen. Die Beziehungen werden aus strukturierten Inhaltsdaten erzeugt.
+Dieses Thema bündelt die Erklärung zum Energiefluss von der Batterie zur Lampe und macht die verwendeten Quellen direkt zugänglich.

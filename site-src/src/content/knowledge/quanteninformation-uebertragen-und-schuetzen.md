@@ -44,7 +44,7 @@ Damit ist Quanteninformation kein frei zugänglicher Zahlenwert, den man aus ein
 
 Das No-Cloning-Theorem besagt, dass es keine universelle physikalische Operation gibt, die jeden beliebigen unbekannten Quantenzustand unverändert nimmt und eine perfekte zweite Kopie erzeugt. Der Zusatz „beliebig unbekannt“ ist wichtig: Bekannte, zueinander unterscheidbare Zustände können selbstverständlich erneut präpariert werden. Auch näherungsweise oder zustandsabhängige Kopierverfahren sind nicht pauschal ausgeschlossen.
 
-Für Quantenkommunikation hat diese Grenze zwei Seiten. Es schließt eine universelle perfekte Kopierstrategie für beliebige unbekannte Quantenzustände aus. In geeigneten Quantenkryptografie-Protokollen können die quantenmechanischen Mess- und Störungseigenschaften außerdem dazu genutzt werden, Eingriffe statistisch erkennbar zu machen. Eine konkrete Sicherheitsgarantie folgt daraus noch nicht; sie benötigt ein vollständig beschriebenes Protokoll und Annahmen über Geräte und Angreifer.
+Für Quantenkommunikation hat diese Grenze zwei Seiten. Sie schließt eine universelle perfekte Kopierstrategie für beliebige unbekannte Quantenzustände aus. In geeigneten Quantenkryptografie-Protokollen können die quantenmechanischen Mess- und Störungseigenschaften außerdem dazu genutzt werden, Eingriffe statistisch erkennbar zu machen. Eine konkrete Sicherheitsgarantie folgt daraus noch nicht; sie benötigt ein vollständig beschriebenes Protokoll und Annahmen über Geräte und Angreifer.
 
 ## Quantenteleportation überträgt einen Zustand, keine Materie
 

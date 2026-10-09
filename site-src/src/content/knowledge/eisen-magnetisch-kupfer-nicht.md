@@ -33,7 +33,7 @@ review:
 
 ## Beobachtung vor Erklärung
 
-Ein handelsüblicher Permanentmagnet zieht ein Stück Eisen deutlich an. Bei einem vergleichbaren Stück Kupfer ist dieser ruhende Haft-Effekt nicht zu sehen. Das ist die Beobachtung, die erklärt werden soll. Sie darf nicht mit einem zweiten Versuch verwechselt werden: Bewegt man einen Magneten relativ zu gut leitendem Kupfer, können Wirbelströme entstehen und die Bewegung bremsen.
+Ein handelsüblicher Permanentmagnet zieht ein Stück Eisen deutlich an. Bei einem vergleichbaren Stück Kupfer ist dieser ruhende Hafteffekt nicht zu sehen. Das ist die Beobachtung, die erklärt werden soll. Sie darf nicht mit einem zweiten Versuch verwechselt werden: Bewegt man einen Magneten relativ zu gut leitendem Kupfer, können Wirbelströme entstehen und die Bewegung bremsen.
 
 ## 1. Einzelne Elektronen liefern magnetische Momente
 
@@ -49,7 +49,7 @@ Ein Eisenstück besteht typischerweise aus magnetischen Domänen. Ohne äußeres
 
 ## 4. Kupfer ist die Gegenprobe
 
-Kupfer bildet unter diesen Bedingungen keine ferromagnetische Ordnung. Seine statische Reaktion ist schwach diamagnetisch und deshalb im einfachen Haftversuch kaum wahrnehmbar. Die hohe elektrische Leitfähigkeit des Kupfers erklärt den fehlenden statischen Haft-Effekt nicht; sie wird erst bei zeitlich veränderlichen Feldern für Wirbelströme relevant.
+Kupfer bildet unter diesen Bedingungen keine ferromagnetische Ordnung. Seine statische Reaktion ist schwach diamagnetisch und deshalb im einfachen Haftversuch kaum wahrnehmbar. Die hohe elektrische Leitfähigkeit des Kupfers erklärt den fehlenden statischen Hafteffekt nicht; sie wird erst bei zeitlich veränderlichen Feldern für Wirbelströme relevant.
 
 ## Die Kausalkette
 

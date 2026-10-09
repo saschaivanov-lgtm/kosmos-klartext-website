@@ -16,13 +16,14 @@ const { entry } = Astro.props;
 const graph = await loadGraph();
 const references = graph.referencesFor(entry.data.uid);
 const kindLabels = { paper: 'Fachartikel', book: 'Buch', book_chapter: 'Buchkapitel', reference_work: 'Lehr- und Nachschlagewerk', technical_report: 'Technischer Bericht', official_background: 'Offizieller wissenschaftlicher Hintergrund' };
+const identifierLabels: Record<string, string> = { doi: 'DOI', arxiv: 'arXiv', journal: 'Zeitschrift', report: 'Bericht' };
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.summary}>
   <header class="page-hero source-hero">
     <div class="page-hero-inner shell">
-      <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Quellen' }, { label: entry.data.title }]} />
-      <span class="eyebrow">Kanonische Quelle · {kindLabels[entry.data.kind]}</span>
+      <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Quellen', href: '/quellen/' }, { label: entry.data.title }]} />
+      <span class="eyebrow">Geprüfte Quelle · {kindLabels[entry.data.kind]}</span>
       <h1>{entry.data.title}</h1>
       <p class="dek">{entry.data.authors.join(', ')} · {entry.data.year}</p>
     </div>
@@ -35,7 +36,7 @@ const kindLabels = { paper: 'Fachartikel', book: 'Buch', book_chapter: 'Buchkapi
             <dt>Autor:innen</dt><dd>{entry.data.authors.join(', ')}</dd>
             <dt>Jahr</dt><dd>{entry.data.year}</dd>
             <dt>Publikation</dt><dd>{entry.data.publisher}</dd>
-            {entry.data.identifiers && <><dt>Identifikator</dt><dd>{Object.entries(entry.data.identifiers).map(([key, value]) => `${key.toUpperCase()}: ${value}`).join(' · ')}</dd></>}
+            {entry.data.identifiers && <><dt>Identifikator</dt><dd>{Object.entries(entry.data.identifiers).map(([key, value]) => `${identifierLabels[key] ?? key}: ${value}`).join(' · ')}</dd></>}
             <dt>Original</dt><dd><a href={entry.data.url} rel="external">Quelle öffnen <span aria-hidden="true">↗</span></a></dd>
           </dl>
         </div>
@@ -48,7 +49,7 @@ const kindLabels = { paper: 'Fachartikel', book: 'Buch', book_chapter: 'Buchkapi
       <aside class="article-aside"><ReviewStamp review={entry.data.review} /></aside>
     </div>
     <section class="related-section" aria-labelledby="used-heading">
-      <div class="section-heading"><span class="eyebrow">Automatischer Rückverweis</span><h2 id="used-heading">Verwendet in</h2><p>Diese Liste entsteht aus den Content-Source-Beziehungen – nicht aus manuell gepflegten Seitentexten.</p></div>
+      <div class="section-heading"><span class="eyebrow">Verknüpfte Inhalte</span><h2 id="used-heading">Verwendet in</h2><p>Diese Liste zeigt alle veröffentlichten Inhalte, die diese Quelle verwenden.</p></div>
       <div class="mixed-grid">{references.map(({ content }) => <ContentCard entry={content} />)}</div>
     </section>
   </section>

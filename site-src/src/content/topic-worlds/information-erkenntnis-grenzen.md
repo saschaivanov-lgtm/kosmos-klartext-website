@@ -20,4 +20,4 @@ review:
     date: '2026-10-04'
 ---
 
-Diese Themenwelt bündelt Wissenseinträge, Videos, Quellen und Projekte entlang zusammenhängender wissenschaftlicher Fragen.
+Diese Themenwelt verbindet Fragen nach belastbaren Aussagen und Wissensgrenzen mit den Erklärungen und Quellen zur Energieerhaltung und Quanteninformation.

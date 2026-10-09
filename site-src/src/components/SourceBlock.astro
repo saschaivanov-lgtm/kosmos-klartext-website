@@ -8,13 +8,14 @@ const roleLabels: Record<string, string> = {
   definition: 'Definition',
   limitation: 'Einordnung'
 };
+const publicLocator = (value: string) => /Launch-Korpus|vor Veröffentlichung|Detail-Lokatoren/i.test(value) ? undefined : value;
 ---
 
 <section class="sources-panel" aria-labelledby="sources-heading">
   <div class="section-heading">
     <span class="eyebrow">Quellentransparenz</span>
     <h2 id="sources-heading">Belege zu diesem Inhalt</h2>
-    <p>Jede Quelle wird nur einmal gespeichert. Verwendungszweck und Grenzen bleiben an jeder Verknüpfung sichtbar.</p>
+    <p>Quellen werden zentral gepflegt. Ihre Rolle für den jeweiligen Inhalt bleibt an jeder Verknüpfung sichtbar.</p>
   </div>
   {items.length > 0 ? <ol class="source-list">
     {items.map(({ source, relation }, index) => (
@@ -24,7 +25,7 @@ const roleLabels: Record<string, string> = {
           <span class="badge">{roleLabels[relation.data.role] ?? relation.data.role}</span>
           <h3><a href={routeFor(source)}>{source.data.title}</a></h3>
           <p>{source.data.authors.join(', ')} · {source.data.year} · {source.data.publisher}</p>
-          <small>{relation.data.locator}</small>
+          {publicLocator(relation.data.locator) && <small>{publicLocator(relation.data.locator)}</small>}
         </div>
       </li>
     ))}

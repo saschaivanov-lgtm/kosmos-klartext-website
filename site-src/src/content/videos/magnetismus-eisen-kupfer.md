@@ -18,7 +18,7 @@ topicIds:
   - topic-magnetismus
 thumbnail:
   src: /assets/images/magnetismus-thumbnail.jpg
-  alt: Gegenüberstellung von Eisen, das an einem Magneten haftet, und Kupfer ohne sichtbaren Haft-Effekt
+  alt: Gegenüberstellung von Eisen, das an einem Magneten haftet, und Kupfer ohne sichtbaren Hafteffekt
 chapters:
   - time: '00:00'
     seconds: 0
