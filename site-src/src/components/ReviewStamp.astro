@@ -9,12 +9,13 @@ interface Props {
 const { review, compact = false } = Astro.props;
 const passed = review.scientific.status === 'passed' && review.editorial.status === 'passed';
 const date = review.scientific.date ? new Intl.DateTimeFormat('de-DE', { dateStyle: 'medium' }).format(new Date(`${review.scientific.date}T12:00:00Z`)) : undefined;
+const publicReviewerLabel = 'Kosmos Klartext';
 ---
 
 <aside class:list={['review-stamp', { compact, pending: !passed }]} aria-label="Prüfstatus">
   <span class="review-icon" aria-hidden="true">{passed ? '✓' : '!'}</span>
   <div>
     <strong>{passed ? 'Wissenschaftlich & redaktionell geprüft' : 'Menschliche Freigabe ausstehend'}</strong>
-    {!compact && <p>{passed ? `Freigabe: ${review.scientific.reviewer} · ${date}` : 'Lokale Vorschau · nicht zur Veröffentlichung freigegeben'}</p>}
+    {!compact && <p>{passed ? `Freigabe: ${publicReviewerLabel} · ${date}` : 'Lokale Vorschau · nicht zur Veröffentlichung freigegeben'}</p>}
   </div>
 </aside>
