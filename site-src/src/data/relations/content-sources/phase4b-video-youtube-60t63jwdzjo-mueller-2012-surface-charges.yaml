@@ -4,11 +4,15 @@
 'sourceUid': 'source-mueller-2012-surface-charges'
 'role': 'background'
 'claimUids': []
-'locator': 'Verwendung gemäß freigegebenem Launch-Korpus und geprüftem Quellenpaket; Detail-Lokatoren vor Veröffentlichung redaktionell bestätigen.'
-'workflowState': 'review_ready'
-'visibility': 'preview'
+'locator': 'Abstract; S. 782–783; Abb. 1–4 und zugehörige Diskussion'
+'workflowState': 'approved'
+'visibility': 'public'
 'review':
   'scientific':
-    'status': 'pending'
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-10'
   'editorial':
-    'status': 'pending'
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-10'
