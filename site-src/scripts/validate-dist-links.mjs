@@ -13,7 +13,7 @@ function walk(dir) {
   });
 }
 
-const htmlFiles = walk(dist).filter((file) => file.endsWith('.html'));
+const htmlFiles = walk(dist).filter((file) => file.endsWith('.html') && !/^google[a-f0-9]+\.html$/i.test(path.basename(file)));
 
 function targetFor(urlPath) {
   const clean = decodeURIComponent(urlPath.split('#')[0].split('?')[0]);

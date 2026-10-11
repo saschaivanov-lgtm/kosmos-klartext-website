@@ -17,7 +17,9 @@ function count(html, pattern) {
   return [...html.matchAll(pattern)].length;
 }
 
-for (const file of walk(dist).filter((item) => item.endsWith('.html'))) {
+const htmlFiles = walk(dist).filter((item) => item.endsWith('.html') && !/^google[a-f0-9]+\.html$/i.test(path.basename(item)));
+
+for (const file of htmlFiles) {
   const html = fs.readFileSync(file, 'utf8');
   const name = path.relative(dist, file);
   if (!/<html\s+lang="de"/.test(html)) errors.push(`${name}: Seitensprache fehlt`);
@@ -68,4 +70,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Statische A11y-Prüfung erfolgreich: Sprache, Landmarken, H1, Überschriftenfolge, Sprunglinks, Alt-Texte/dekorative Markenbilder und ${colorPairs.length} zentrale Farbpaare.`);
+console.log(`Statische A11y-Prüfung erfolgreich: ${htmlFiles.length} Inhaltsseiten; Sprache, Landmarken, H1, Überschriftenfolge, Sprunglinks, Alt-Texte/dekorative Markenbilder und ${colorPairs.length} zentrale Farbpaare.`);
