@@ -1,0 +1,22 @@
+uid: source-maruska-1973-violet-gan
+type: source_canonical
+slug: maruska-1973-violet-gan
+locale: de
+kind: paper
+title: Violet luminescence of Mg-doped GaN
+authors:
+  - H. P. Maruska
+  - D. A. Stevenson
+  - J. I. Pankove
+year: 1973
+publisher: Applied Physics Letters 22(6), 303–305
+url: https://doi.org/10.1063/1.1654648
+identifiers:
+  doi: 10.1063/1.1654648
+summary: Frühe sichtbare violette Elektrolumineszenz aus Mg-dotiertem GaN mit sehr geringer Leistungsfähigkeit.
+limits: Trägt keine umfassende Prioritäts- oder Einzelerfinderbehauptung und belegt keinen effizienten technischen LED-Durchbruch.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

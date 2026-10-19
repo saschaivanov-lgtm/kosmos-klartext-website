@@ -1,0 +1,13 @@
+uid: cs-phase5d4-knowledge-halbleiter-led-maruska-1973
+type: content_source
+contentUid: knowledge-halbleiter-led
+sourceUid: source-maruska-1973-violet-gan
+role: supports
+claimUids:
+  - claim-led-violet-emission-candela-breakthrough
+locator: 'Abstract, S. 303: sichtbare violette Elektrolumineszenz aus Mg-dotiertem GaN, Spitzenenergie um 2,9 eV und Leistungswirkungsgrad in der Größenordnung 10⁻⁵.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

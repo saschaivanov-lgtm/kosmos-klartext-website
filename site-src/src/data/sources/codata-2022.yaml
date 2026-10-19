@@ -1,0 +1,29 @@
+'uid': 'source-codata-2022'
+'type': 'source_canonical'
+'slug': 'codata-2022'
+'locale': 'de'
+'kind': 'paper'
+'title': 'CODATA recommended values of the fundamental physical constants: 2022'
+'authors':
+  - 'Peter J. Mohr'
+  - 'David B. Newell'
+  - 'Barry N. Taylor'
+  - 'Eite Tiesinga'
+'year': 2025
+'publisher': 'Journal of Physical and Chemical Reference Data 54, 033105'
+'url': 'https://doi.org/10.1063/5.0279860'
+'identifiers':
+  'doi': '10.1063/5.0279860'
+'summary': 'Referenzwerte für c, h und Elementarladung.'
+'limits': 'Konstanten erklären nicht allein reale Emissionsenergien komplexer Bauteile.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'

@@ -1,0 +1,18 @@
+uid: cs-phase5d4-knowledge-halbleiter-led-nakamura-2015
+type: content_source
+contentUid: knowledge-halbleiter-led
+sourceUid: source-nakamura-2015-blue-led
+role: limitation
+claimUids:
+  - claim-led-radiative-direct-transition
+  - claim-led-material-system-requirements
+  - claim-led-violet-emission-candela-breakthrough
+  - claim-led-gan-activation-steps
+  - claim-led-dislocation-efficiency-coexistence
+  - claim-led-double-heterostructure-quantum-well-stages
+locator: 'Abschnitt I und Abb. 1 zur aktiven Schicht und strahlenden Rekombination; Abschnitt II zur Materialwahl; Abschnitt III mit Abb. 7, 10 und 13 zur Chronologie, Doppelheterostruktur und begrenzten Defektaussage. Akteursperspektive nur als Gegenprüfung, nicht als alleinige historische Quelle.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

@@ -1,0 +1,23 @@
+uid: source-nakamura-1995-quantum-well-leds
+type: source_canonical
+slug: nakamura-1995-quantum-well-leds
+locale: de
+kind: paper
+title: High-Brightness InGaN Blue, Green and Yellow Light-Emitting Diodes with Quantum Well Structures
+authors:
+  - Shuji Nakamura
+  - Masayuki Senoh
+  - Naruhito Iwasa
+  - Shin-ichi Nagahama
+year: 1995
+publisher: Japanese Journal of Applied Physics 34, L797–L799
+url: https://doi.org/10.1143/JJAP.34.L797
+identifiers:
+  doi: 10.1143/JJAP.34.L797
+summary: Helle blaue, grüne und gelbe III-V-Nitrid-LEDs mit Quantentopfstrukturen.
+limits: Spätere Quantentopfstufe; darf nicht rückwirkend als Architektur der 1994er Doppelheterostruktur dargestellt werden.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

@@ -1,0 +1,24 @@
+'uid': 'source-nobel-2014-blue-led-background'
+'type': 'source_canonical'
+'slug': 'nobel-2014-blue-led-background'
+'locale': 'de'
+'kind': 'official_background'
+'title': 'Efficient blue light-emitting diodes leading to bright and energy-saving white light sources'
+'authors':
+  - 'Royal Swedish Academy of Sciences'
+'year': 2014
+'publisher': 'The Nobel Prize'
+'url': 'https://www.nobelprize.org/uploads/2018/06/advanced-physicsprize2014-1.pdf'
+'summary': 'Historische und wissenschaftliche Synthese zur blauen LED.'
+'limits': 'Sekundäre Synthese des Nobelkomitees, keine Primärarbeit.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'

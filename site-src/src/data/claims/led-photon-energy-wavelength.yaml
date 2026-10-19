@@ -1,0 +1,12 @@
+uid: claim-led-photon-energy-wavelength
+type: claim
+contentUid: knowledge-halbleiter-led
+statement: 'Für ein Photon gilt E = h·c/λ; ein Photon mit kürzerer blauer Wellenlänge trägt daher mehr Energie als ein Photon mit längerer roter Wellenlänge. Für die gewählten Beispiele ergeben sich etwa 2,76 eV bei 450 nm und 1,97 eV bei 630 nm.'
+scientificCore: true
+scope: Einzelphotonen und die Beispielwellenlängen 450 nm und 630 nm.
+limits: Die Rechnung erklärt die höhere Übergangsenergie, setzt die reale LED-Emissionsenergie aber nicht starr mit einer nominellen Materialbandlücke gleich und erklärt nicht allein die technische Schwierigkeit einer LED.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

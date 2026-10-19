@@ -1,0 +1,12 @@
+uid: claim-led-radiative-direct-transition
+type: claim
+contentUid: knowledge-halbleiter-led
+statement: In der aktiven Region einer LED können Elektronen und Löcher strahlend rekombinieren; dabei wird eine Energiedifferenz als Photon abgegeben. Direkte Bandübergänge begünstigen diesen Prozess gegenüber indirekten Übergängen, bei denen zusätzlich ein Impulsübertragungsweg über das Gitter nötig ist.
+scientificCore: true
+scope: Qualitative Festkörperbeschreibung für LED-Grundlagen.
+limits: Elektronen und Löcher sind keine klassischen Kugeln, Rekombination vernichtet keine Materie, nicht jeder Übergang ist strahlend und die Bandlücke ist kein räumlicher Spalt.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

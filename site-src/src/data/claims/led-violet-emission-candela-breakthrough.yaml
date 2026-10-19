@@ -1,0 +1,12 @@
+uid: claim-led-violet-emission-candela-breakthrough
+type: claim
+contentUid: knowledge-halbleiter-led
+statement: Violette Elektrolumineszenz aus Mg-dotiertem GaN wurde bereits 1973 berichtet; der praktisch relevante Helligkeitsdurchbruch folgte erst 1994 mit einer InGaN/AlGaN-Doppelheterostruktur der Candela-Klasse. Frühe violette Emission und die erste effiziente, praktisch nutzbare blaue LED sind daher nicht gleichbedeutend.
+scientificCore: true
+scope: Historische Unterscheidung zwischen früher Emission und effizientem technischem Meilenstein.
+limits: Keine umfassende Prioritäts-, Patent- oder Firmenhistorie und keine Einzelerfinderbehauptung; die 1973er Emission war violett, die 1994er Emission lag um 450 nm.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

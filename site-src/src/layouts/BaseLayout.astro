@@ -3,9 +3,9 @@ import '@/styles/global.css';
 import SiteHeader from '@/components/SiteHeader.astro';
 import SiteFooter from '@/components/SiteFooter.astro';
 import { globalRobotsLock, robotsTargetForPath } from '@/lib/release-policy';
-interface Props { title: string; description: string; image?: string; pageType?: 'website' | 'article' }
-const { title, description, image = '/assets/brand/kk-logo-full-480.jpg', pageType = 'website' } = Astro.props;
-const pageTitle = title === 'Kosmos Klartext' ? title : `${title} · Kosmos Klartext`;
+interface Props { title: string; seoTitle?: string; description: string; image?: string; pageType?: 'website' | 'article' }
+const { title, seoTitle, description, image = '/assets/brand/kk-logo-full-480.jpg', pageType = 'website' } = Astro.props;
+const pageTitle = seoTitle ?? (title === 'Kosmos Klartext' ? title : `${title} · Kosmos Klartext`);
 const canonical = new URL(Astro.url.pathname, 'https://kosmosklartext.de');
 const socialImage = new URL(image, 'https://kosmosklartext.de');
 const robotsTarget = robotsTargetForPath(Astro.url.pathname);

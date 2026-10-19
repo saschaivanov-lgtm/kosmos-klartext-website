@@ -1,0 +1,12 @@
+uid: claim-led-dislocation-efficiency-coexistence
+type: claim
+contentUid: knowledge-halbleiter-led
+statement: Lester et al. fanden in den untersuchten GaN-basierten LEDs mehr als `2 × 10¹⁰ cm⁻²` Versetzungen bei bis zu 4 % externer Quanteneffizienz. Die hohe Versetzungsdichte war in diesen konkreten Bauteilen also mit einer für damalige GaN-LEDs hohen externen Quanteneffizienz vereinbar.
+scientificCore: true
+scope: Historischer Befund an den konkret von Lester et al. untersuchten GaN-basierten LEDs.
+limits: Keine allgemeine Aussage, dass Defekte folgenlos oder alle GaN- beziehungsweise InGaN-Strukturen defekttolerant seien; Defektarten werden nicht gleichgesetzt.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

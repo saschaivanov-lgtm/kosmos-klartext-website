@@ -1,0 +1,23 @@
+uid: source-lester-1995-dislocation-leds
+type: source_canonical
+slug: lester-1995-dislocation-leds
+locale: de
+kind: paper
+title: High dislocation densities in high efficiency GaN-based light-emitting diodes
+authors:
+  - S. D. Lester
+  - F. A. Ponce
+  - M. G. Craford
+  - D. A. Steigerwald
+year: 1995
+publisher: Applied Physics Letters 66(10), 1249–1251
+url: https://doi.org/10.1063/1.113252
+identifiers:
+  doi: 10.1063/1.113252
+summary: In den untersuchten GaN-basierten LEDs traten hohe Versetzungsdichten gemeinsam mit bis zu 4 % externer Quanteneffizienz auf.
+limits: Befund zu konkreten historischen Bauteilen; keine allgemeine Folgenlosigkeit von Defekten oder universelle Defekttoleranz.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

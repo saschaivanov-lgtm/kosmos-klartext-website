@@ -1,0 +1,12 @@
+uid: claim-led-double-heterostructure-quantum-well-stages
+type: claim
+contentUid: knowledge-halbleiter-led
+statement: Die 1994er Candela-LED verwendete eine InGaN/AlGaN-Doppelheterostruktur; 1995 wurden helle InGaN-LEDs mit Quantentopfstrukturen berichtet. Doppelheterostruktur und Quantentopf sind daher weder synonym noch derselbe historische Schritt.
+scientificCore: true
+scope: Architektur und Chronologie der zwei geprüften Primärarbeiten von 1994 und 1995.
+limits: Quantentöpfe werden nicht als alleiniger Grund für den 1994er Durchbruch dargestellt und nicht rückwirkend in die 1994er Arbeit hineingelesen.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

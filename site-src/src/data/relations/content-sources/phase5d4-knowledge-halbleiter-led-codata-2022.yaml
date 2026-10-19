@@ -1,0 +1,13 @@
+uid: cs-phase5d4-knowledge-halbleiter-led-codata-2022
+type: content_source
+contentUid: knowledge-halbleiter-led
+sourceUid: source-codata-2022
+role: supports
+claimUids:
+  - claim-led-photon-energy-wavelength
+locator: 'NIST-Tabelle beziehungsweise Wall Chart der CODATA-2022-Werte, Zeilen „speed of light in vacuum“, „Planck constant“ und „elementary charge“; Kontrollrechnung E = h·c/(e·λ): 450 nm = 2,7552044096 eV, 630 nm = 1,9680031497 eV.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

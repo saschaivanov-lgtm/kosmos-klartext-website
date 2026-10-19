@@ -1,0 +1,13 @@
+uid: cs-phase5d4-knowledge-halbleiter-led-nakamura-1992
+type: content_source
+contentUid: knowledge-halbleiter-led
+sourceUid: source-nakamura-1992-thermal-annealing
+role: supports
+claimUids:
+  - claim-led-gan-activation-steps
+locator: 'Abstract, S. L139: N₂-Tempern oberhalb 700 °C; Widerstand vor dem Tempern ungefähr 10⁶ Ω·cm, danach ungefähr 2 Ω·cm; Lochkonzentration 3 × 10¹⁷ cm⁻³ und Beweglichkeit 10 cm²/(V·s).'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

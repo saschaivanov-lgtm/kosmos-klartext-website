@@ -1,0 +1,23 @@
+uid: source-nakamura-1992-thermal-annealing
+type: source_canonical
+slug: nakamura-1992-thermal-annealing
+locale: de
+kind: paper
+title: Thermal Annealing Effects on P-Type Mg-Doped GaN Films
+authors:
+  - Shuji Nakamura
+  - Takashi Mukai
+  - Masayuki Senoh
+  - Naruhito Iwasa
+year: 1992
+publisher: Japanese Journal of Applied Physics 31, Part 2 No. 2B, L139–L142
+url: https://doi.org/10.1143/JJAP.31.L139
+identifiers:
+  doi: 10.1143/JJAP.31.L139
+summary: N₂-Tempern oberhalb 700 °C aktivierte in den untersuchten Mg-dotierten GaN-Filmen eine niedrigohmige p-Leitung.
+limits: Temperatur und elektrische Kennwerte gelten für die untersuchten Filme und Prozessbedingungen, nicht als universelle GaN-Konstanten.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

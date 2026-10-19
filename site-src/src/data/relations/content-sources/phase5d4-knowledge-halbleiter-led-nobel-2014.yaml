@@ -1,0 +1,14 @@
+uid: cs-phase5d4-knowledge-halbleiter-led-nobel-2014
+type: content_source
+contentUid: knowledge-halbleiter-led
+sourceUid: source-nobel-2014-blue-led-background
+role: supports
+claimUids:
+  - claim-led-radiative-direct-transition
+  - claim-led-material-system-requirements
+locator: 'S. 2, Abb. 1 und unmittelbar folgender Text zu Injektion, Elektron-Loch-Rekombination sowie direkter und indirekter Bandlücke; S. 3–7 zur Entwicklungskette aus GaN-Wachstum, p-Leitung und aktiver InGaN-Struktur.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

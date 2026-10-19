@@ -1,0 +1,13 @@
+uid: cs-phase5d4-knowledge-halbleiter-led-nakamura-1995
+type: content_source
+contentUid: knowledge-halbleiter-led
+sourceUid: source-nakamura-1995-quantum-well-leds
+role: supports
+claimUids:
+  - claim-led-double-heterostructure-quantum-well-stages
+locator: 'Abstract, S. L797: helle blaue, grüne und gelbe III-V-Nitrid-LEDs mit Quantentopfstrukturen, mittels MOCVD auf Saphir gewachsen.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

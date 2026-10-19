@@ -1,0 +1,13 @@
+uid: cs-phase5d4-knowledge-halbleiter-led-lester-1995
+type: content_source
+contentUid: knowledge-halbleiter-led
+sourceUid: source-lester-1995-dislocation-leds
+role: supports
+claimUids:
+  - claim-led-dislocation-efficiency-coexistence
+locator: 'Abstract, S. 1249: untersuchte III-V-Nitrid-LEDs, externe Quanteneffizienz bis 4 % und per TEM bestimmte Versetzungsdichte von mehr als 2 × 10¹⁰ cm⁻².'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

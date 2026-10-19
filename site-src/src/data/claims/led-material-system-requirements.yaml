@@ -1,0 +1,12 @@
+uid: claim-led-material-system-requirements
+type: claim
+contentUid: knowledge-halbleiter-led
+statement: GaN war wegen seiner direkten großen Bandlücke ein geeigneter Ausgangspunkt für violett und blau emittierende Bauteile, doch eine technisch brauchbare blaue LED erforderte zusätzlich kontrolliertes Kristallwachstum, p-Leitung und eine geeignete InGaN-basierte aktive Schichtstruktur.
+scientificCore: true
+scope: Redaktionelle Synthese aus separat belegten Primärbefunden zu Kristallwachstum, p-Leitung und aktiver Struktur; keine einzelne Quelle formuliert die vollständige Dreierkette wörtlich.
+limits: Die drei Punkte sind ein notwendiger Erklärungskern, aber keine vollständige Darstellung moderner Bauteilphysik; Kontakte, Grenzflächen und interne Felder werden nicht negiert.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

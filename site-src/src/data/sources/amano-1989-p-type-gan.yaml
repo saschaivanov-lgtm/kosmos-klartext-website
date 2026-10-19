@@ -1,0 +1,29 @@
+'uid': 'source-amano-1989-p-type-gan'
+'type': 'source_canonical'
+'slug': 'amano-1989-p-type-gan'
+'locale': 'de'
+'kind': 'paper'
+'title': 'P-Type Conduction in Mg-Doped GaN Treated with Low-Energy Electron Beam Irradiation'
+'authors':
+  - 'Hiroshi Amano'
+  - 'Masahiro Kito'
+  - 'Kazumasa Hiramatsu'
+  - 'Isamu Akasaki'
+'year': 1989
+'publisher': 'Japanese Journal of Applied Physics 28, L2112'
+'url': 'https://doi.org/10.1143/JJAP.28.L2112'
+'identifiers':
+  'doi': '10.1143/JJAP.28.L2112'
+'summary': 'Experimenteller Nachweis p-leitenden Mg-dotierten GaN.'
+'limits': 'Elektronenbestrahlung war kein vollständiger industrieller Prozess.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'

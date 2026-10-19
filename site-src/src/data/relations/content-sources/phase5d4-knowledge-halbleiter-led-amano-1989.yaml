@@ -1,0 +1,14 @@
+uid: cs-phase5d4-knowledge-halbleiter-led-amano-1989
+type: content_source
+contentUid: knowledge-halbleiter-led
+sourceUid: source-amano-1989-p-type-gan
+role: supports
+claimUids:
+  - claim-led-material-system-requirements
+  - claim-led-gan-activation-steps
+locator: 'Abstract, S. L2112: p-Leitung in Mg-dotiertem GaN nach Niedrigenergie-Elektronenbestrahlung sowie die berichtete Widerstandsabnahme und verstärkte Photolumineszenz.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

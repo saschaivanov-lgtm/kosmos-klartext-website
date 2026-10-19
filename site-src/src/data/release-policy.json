@@ -24,12 +24,14 @@
       "tw-materie-teilchen-quanten"
     ],
     "topics": [
+      "topic-halbleiter-led",
       "topic-energieerhaltung",
       "topic-magnetismus",
       "topic-quanteninformation",
       "topic-stromkreise-felder"
     ],
     "knowledge": [
+      "knowledge-halbleiter-led",
       "knowledge-eisen-kupfer-magnetismus",
       "knowledge-batterie-lampe",
       "knowledge-quanteninformation"
@@ -41,6 +43,16 @@
       "video-youtube-WdfptEt9Dl4"
     ],
     "sources": [
+      "source-amano-1986-gan-buffer",
+      "source-amano-1989-p-type-gan",
+      "source-codata-2022",
+      "source-lester-1995-dislocation-leds",
+      "source-maruska-1973-violet-gan",
+      "source-nakamura-1992-thermal-annealing",
+      "source-nakamura-1994-candela-led",
+      "source-nakamura-1995-quantum-well-leds",
+      "source-nakamura-2015-blue-led",
+      "source-nobel-2014-blue-led-background",
       "source-chen-1995-xmcd-iron-cobalt",
       "source-davis-1995-mass-standards",
       "source-openstax-2016-magnetism-matter",
@@ -77,7 +89,6 @@
     "cooperations",
     "magazine",
     "english",
-    "priority-b-blue-led",
     "priority-b-black-holes",
     "all-other-content"
   ]

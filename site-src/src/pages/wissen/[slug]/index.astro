@@ -21,7 +21,8 @@ const related = graph.linked(entry.data.uid);
 const updated = new Intl.DateTimeFormat('de-DE', { dateStyle: 'long' }).format(new Date(`${entry.data.updatedAt}T12:00:00Z`));
 ---
 
-<BaseLayout title={entry.data.title} description={entry.data.summary} image={entry.data.heroImage?.src} pageType="article">
+<BaseLayout title={entry.data.title} seoTitle={entry.data.seoTitle} description={entry.data.summary} image={entry.data.heroImage?.src} pageType="article">
+  {entry.data.uid === 'knowledge-halbleiter-led' && <style is:inline>.equation{margin:1.5rem 0;padding:1rem 1.25rem;overflow-x:auto;border-left:4px solid var(--cyan);background:var(--paper-strong);font-family:var(--font-serif);font-size:clamp(1.2rem,4vw,1.55rem);text-align:center}</style>}
   <header class="page-hero">
     <div class="page-hero-inner shell">
       <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Wissen', href: '/wissen/' }, { label: entry.data.title }]} />

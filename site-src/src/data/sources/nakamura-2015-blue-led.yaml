@@ -1,0 +1,26 @@
+'uid': 'source-nakamura-2015-blue-led'
+'type': 'source_canonical'
+'slug': 'nakamura-2015-blue-led'
+'locale': 'de'
+'kind': 'paper'
+'title': 'Background story of the invention of efficient blue InGaN LEDs'
+'authors':
+  - 'Shuji Nakamura'
+'year': 2015
+'publisher': 'Reviews of Modern Physics 87, 1139'
+'url': 'https://doi.org/10.1103/RevModPhys.87.1139'
+'identifiers':
+  'doi': '10.1103/RevModPhys.87.1139'
+'summary': 'Review der Entwicklung effizienter InGaN-LEDs.'
+'limits': 'Autor ist zentraler Akteur; historische Wertungen benötigen Gegenprüfung.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'

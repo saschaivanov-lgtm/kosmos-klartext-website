@@ -1,0 +1,14 @@
+uid: cs-phase5d4-knowledge-halbleiter-led-amano-1986
+type: content_source
+contentUid: knowledge-halbleiter-led
+sourceUid: source-amano-1986-gan-buffer
+role: supports
+claimUids:
+  - claim-led-material-system-requirements
+  - claim-led-aln-buffer-gan-growth
+locator: 'S. 353, Abstract; S. 354, Abb. 2(a)/(b) und Absatz darunter zu optisch flacher, gleichmäßiger Oberfläche und reduzierten beziehungsweise verschwundenen Rissen; Abb. 3–4 und Schlussabsatz zu kristallinen, morphologischen und optischen Eigenschaften.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

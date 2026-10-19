@@ -1,0 +1,15 @@
+uid: cs-phase5d4-knowledge-halbleiter-led-nakamura-1994
+type: content_source
+contentUid: knowledge-halbleiter-led
+sourceUid: source-nakamura-1994-candela-led
+role: supports
+claimUids:
+  - claim-led-material-system-requirements
+  - claim-led-violet-emission-candela-breakthrough
+  - claim-led-double-heterostructure-quantum-well-stages
+locator: 'S. 1687, Abstract: InGaN/AlGaN-Doppelheterostruktur, über 1 cd, 1500 µW, 2,7 % externe Quanteneffizienz bei 20 mA und Emissionsmaximum um 450 nm; S. 1688, Abb. 1–2 und Ergebnistext; S. 1689, Schlussabsatz.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

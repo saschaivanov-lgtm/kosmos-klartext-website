@@ -9,6 +9,9 @@ const roleLabels: Record<string, string> = {
   limitation: 'Einordnung'
 };
 const publicLocator = (value: string) => /Launch-Korpus|vor Veröffentlichung|Detail-Lokatoren/i.test(value) ? undefined : value;
+const publicRole = (source: GraphEntry, relation: GraphEntry) => relation.data.contentUid === 'knowledge-halbleiter-led'
+  ? (source.data.uid === 'source-nobel-2014-blue-led-background' ? 'Synthese/Hintergrund' : relation.data.role === 'limitation' ? 'Begrenzung/Gegenprüfung' : 'Trägt Aussage')
+  : (roleLabels[relation.data.role] ?? relation.data.role);
 ---
 
 <section class="sources-panel" aria-labelledby="sources-heading">
@@ -22,7 +25,7 @@ const publicLocator = (value: string) => /Launch-Korpus|vor Veröffentlichung|De
       <li>
         <div class="source-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</div>
         <div>
-          <span class="badge">{roleLabels[relation.data.role] ?? relation.data.role}</span>
+          <span class="badge">{publicRole(source, relation)}</span>
           <h3><a href={routeFor(source)}>{source.data.title}</a></h3>
           <p>{source.data.authors.join(', ')} · {source.data.year} · {source.data.publisher}</p>
           {publicLocator(relation.data.locator) && <small>{publicLocator(relation.data.locator)}</small>}

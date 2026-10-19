@@ -59,6 +59,7 @@ const knowledge = defineCollection({
     locale: z.literal('de'),
     title: z.string(),
     dek: z.string(),
+    seoTitle: z.string().optional(),
     summary: z.string(),
     readingMinutes: z.number().int().positive(),
     topicIds: z.array(z.string().regex(/^topic-/)).min(1),

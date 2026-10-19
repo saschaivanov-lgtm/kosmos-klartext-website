@@ -1,0 +1,12 @@
+uid: claim-led-gan-activation-steps
+type: claim
+contentUid: knowledge-halbleiter-led
+statement: Amano et al. zeigten 1989 p-Leitung in Mg-dotiertem GaN nach Niedrigenergie-Elektronenbestrahlung; Nakamura et al. berichteten 1992 niedrigohmiges p-GaN nach N₂-Tempern oberhalb 700 °C. Diese beiden Aktivierungsschritte sind historisch und technisch zu unterscheiden.
+scientificCore: true
+scope: Zwei experimentell belegte Aktivierungsschritte für Mg-dotiertes p-GaN.
+limits: LEEBI und thermisches N₂-Tempern sind verschiedene Verfahren; der Mg-H-Passivierungsmechanismus und weitere industrielle Dotierdetails sind nicht Bestandteil dieses Claims.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

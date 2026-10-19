@@ -74,11 +74,11 @@ for (const { data } of records) {
 const countType = (type) => records.filter(({ data }) => data.type === type).length;
 const expected = {
   theme_world: 4,
-  topic: 4,
-  knowledge: 3,
+  topic: 5,
+  knowledge: 4,
   video: 4,
-  source_canonical: 13,
-  claim: 15,
+  source_canonical: 23,
+  claim: 23,
   learning_path: 0,
   research_project: 0,
   cooperation: 0,
@@ -92,7 +92,7 @@ const supportedClaims = new Set(records.filter(({ data }) => data.type === 'cont
 for (const { data } of records.filter(({ data }) => data.type === 'claim' && data.scientificCore)) {
   if (!supportedClaims.has(data.uid)) errors.push(`${data.uid}: wissenschaftliche Kernaussage ohne Quellenbeziehung`);
 }
-if (supportedClaims.size !== 15) errors.push(`Release-Gate: 15 belegte Claims erwartet, gefunden ${supportedClaims.size}`);
+if (supportedClaims.size !== 23) errors.push(`Release-Gate: 23 belegte Claims erwartet, gefunden ${supportedClaims.size}`);
 
 const policy = JSON.parse(fs.readFileSync(path.join(root, 'src', 'data', 'release-policy.json'), 'utf8'));
 if (policy.globalRobotsLock !== null) errors.push('Phase 4E.2: Globale Robots-Sperre muss aufgehoben sein');

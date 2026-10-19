@@ -1,0 +1,29 @@
+'uid': 'source-amano-1986-gan-buffer'
+'type': 'source_canonical'
+'slug': 'amano-1986-gan-buffer'
+'locale': 'de'
+'kind': 'paper'
+'title': 'Metalorganic vapor phase epitaxial growth of a high quality GaN film using an AlN buffer layer'
+'authors':
+  - 'Hiroshi Amano'
+  - 'Nobuhito Sawaki'
+  - 'Isamu Akasaki'
+  - 'Yoshimasa Toyoda'
+'year': 1986
+'publisher': 'Applied Physics Letters 48, 353'
+'url': 'https://doi.org/10.1063/1.96549'
+'identifiers':
+  'doi': '10.1063/1.96549'
+'summary': 'AlN-Pufferschicht für hochwertigere GaN-Filme.'
+'limits': 'Löst nicht allein p-Dotierung oder den vollständigen LED-Aufbau.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'

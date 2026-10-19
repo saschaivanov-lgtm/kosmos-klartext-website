@@ -1,0 +1,12 @@
+uid: claim-led-aln-buffer-gan-growth
+type: claim
+contentUid: knowledge-halbleiter-led
+statement: Amano et al. berichteten 1986, dass eine AlN-Pufferschicht vor dem GaN-Wachstum auf Saphir optisch flache, gleichmäßige und bei geeigneten Wachstumsbedingungen rissfreie GaN-Filme mit verbesserten morphologischen, kristallinen und optischen Eigenschaften ermöglichte.
+scientificCore: true
+scope: Konkrete, in Amano et al. 1986 dokumentierte Filmmerkmale auf Saphir.
+limits: Der Wachstumsschritt löste weder die p-Dotierung noch den vollständigen LED-Aufbau und behauptet keine perfekten Kristalle oder modernen Defektdichten.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-18' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-18' }

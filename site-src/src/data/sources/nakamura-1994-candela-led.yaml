@@ -1,0 +1,28 @@
+'uid': 'source-nakamura-1994-candela-led'
+'type': 'source_canonical'
+'slug': 'nakamura-1994-candela-led'
+'locale': 'de'
+'kind': 'paper'
+'title': 'Candela-class high-brightness InGaN/AlGaN double-heterostructure blue-light-emitting diodes'
+'authors':
+  - 'Shuji Nakamura'
+  - 'Takashi Mukai'
+  - 'Masayuki Senoh'
+'year': 1994
+'publisher': 'Applied Physics Letters 64, 1687'
+'url': 'https://doi.org/10.1063/1.111832'
+'identifiers':
+  'doi': '10.1063/1.111832'
+'summary': 'Übergang zur hellen praktisch relevanten blauen LED.'
+'limits': 'Doppelheterostruktur; nicht mit allen späteren Quantentopf-LEDs gleichzusetzen.'
+'workflowState': 'approved'
+'visibility': 'public'
+'review':
+  'scientific':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'
+  'editorial':
+    'status': 'passed'
+    'reviewer': 'Sascha'
+    'date': '2026-10-18'
