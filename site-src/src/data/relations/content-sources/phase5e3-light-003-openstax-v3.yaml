@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-003-openstax-v3
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-openstax-university-physics-v3
+role: supports
+claimUids: [claim-light-quantized-energy-transfer-photoelectric]
+locator: '§6.2, „Characteristics of the Photoelectric Effect“, Gl. (6.13)–(6.16), besonders Ef = hf und Kmax = hf − φ.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

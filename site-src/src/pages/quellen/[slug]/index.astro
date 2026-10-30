@@ -5,16 +5,20 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import ReviewStamp from '@/components/ReviewStamp.astro';
 import ContentCard from '@/components/ContentCard.astro';
 import { loadGraph } from '@/lib/graph';
+import { isPreviewIncluded } from '@/lib/internal-preview';
 import { isReleased } from '@/lib/release-policy';
 
 export async function getStaticPaths() {
-  const entries = await getCollection('sources', ({ data }) => isReleased('sources', data.uid));
+  const entries = await getCollection('sources', ({ data }) => isPreviewIncluded('sources', data.uid));
   return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
 }
 
 const { entry } = Astro.props;
-const graph = await loadGraph();
-const references = graph.referencesFor(entry.data.uid);
+const preview = !isReleased('sources', entry.data.uid);
+const graph = await loadGraph({ includeInternal: preview });
+const references = graph.referencesFor(entry.data.uid).filter(({ content, relation }) => !preview || (
+  relation.data.workflowState === 'approved' && content.data.uid === 'knowledge-licht'
+));
 const kindLabels = { paper: 'Fachartikel', book: 'Buch', book_chapter: 'Buchkapitel', reference_work: 'Lehr- und Nachschlagewerk', technical_report: 'Technischer Bericht', official_background: 'Offizieller wissenschaftlicher Hintergrund' };
 const identifierLabels: Record<string, string> = { doi: 'DOI', arxiv: 'arXiv', journal: 'Zeitschrift', report: 'Bericht' };
 ---

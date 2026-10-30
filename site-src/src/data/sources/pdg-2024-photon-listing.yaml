@@ -1,0 +1,20 @@
+uid: source-pdg-2024-photon-listing
+type: source_canonical
+slug: pdg-2024-photon-listing
+locale: de
+kind: reference_work
+title: Review of Particle Physics 2024 – Photon Listing
+authors:
+  - S. Navas et al. (Particle Data Group)
+year: 2024
+publisher: Physical Review D 110, 030001; Particle Data Group
+url: https://pdg.lbl.gov/2024/listings/rpp2024-list-photon.pdf
+identifiers:
+  doi_overall_work: 10.1103/PhysRevD.110.030001
+summary: Offizielles PDG-Photon-Listing mit experimentellen Obergrenzen für eine hypothetische Photonenmasse.
+limits: Begrenzungs- und Gegenprüfungsquelle; misst keinen exakten Wert m = 0 und ersetzt nicht die relativistische Standardbeschreibung.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

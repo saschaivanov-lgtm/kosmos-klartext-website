@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-008-openstax-v3
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-openstax-university-physics-v3
+role: supports
+claimUids: [claim-light-photon-momentum]
+locator: '§6.3 „Momentum of a Photon“, Gl. (6.17)–(6.22), insbesondere (6.18), (6.19) und (6.21).'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

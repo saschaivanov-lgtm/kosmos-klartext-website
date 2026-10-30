@@ -1,0 +1,12 @@
+uid: claim-light-classical-electromagnetic-wave
+type: claim
+contentUid: knowledge-licht
+statement: 'In der klassischen Elektrodynamik wird Licht im Vakuum als sich ausbreitende elektromagnetische Welle beschrieben: elektrische und magnetische Felder ändern sich gekoppelt und stehen bei einer ebenen Welle senkrecht zur Ausbreitungsrichtung.'
+scientificCore: true
+scope: Klassische Elektrodynamik; freie ebene Welle im Vakuum.
+limits: Keine vollständige Beschreibung beliebiger Quantenzustände; kein materielles Trägermedium.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

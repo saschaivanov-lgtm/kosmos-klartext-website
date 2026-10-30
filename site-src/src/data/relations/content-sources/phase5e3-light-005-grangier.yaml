@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-005-grangier
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-grangier-roger-aspect-1986
+role: supports
+claimUids: [claim-light-beyond-classical-wave-particle]
+locator: 'Abstract; S. 173–179, besonders Schluss S. 178–179 zur Komplementarität der getrennten Aufbauten und zu den Grenzen klassischer Modelle.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

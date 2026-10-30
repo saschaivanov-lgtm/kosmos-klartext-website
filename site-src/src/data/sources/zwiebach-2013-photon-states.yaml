@@ -1,0 +1,21 @@
+uid: source-zwiebach-2013-photon-states
+type: source_canonical
+slug: zwiebach-2013-photon-states
+locale: de
+kind: technical_report
+title: Quantum Dynamics
+authors:
+  - Barton Zwiebach
+year: 2013
+publisher: MIT OpenCourseWare, 8.05 Quantum Physics II, Fall 2013, Lecture Notes 6; Version 4 November 2013
+url: https://ocw.mit.edu/courses/8-05-quantum-physics-ii-fall-2013/79a8091ef4f18d8e3ff76a097e8db33c_MIT8_05F13_Chap_06.pdf
+identifiers:
+  course: MIT 8.05 Quantum Physics II
+  document: Lecture Notes 6
+summary: Fortgeschrittene MIT-Lehrunterlage mit Abschnitt 5.3 zu Photonenzuständen, Feldquantisierung und kohärenten Zuständen.
+limits: Einmoden-Lehrmodell; keine allgemeine Photonenlokalisation, keine vollständige relativistische QED und keine philosophische Ontologie.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

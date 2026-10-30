@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-007-pdg
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-pdg-2024-photon-listing
+role: limitation
+claimUids: [claim-light-zero-invariant-mass]
+locator: 'Photon-Listing, PDF-S. 1–2, Abschnitt „gamma MASS“, Tabelle der experimentellen Obergrenzen und Erläuterungen 1–21; Gegenprüfung experimenteller Grenzen, kein gemessener exakter Wert null.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

@@ -1,0 +1,24 @@
+uid: source-openstax-university-physics-v3
+type: source_canonical
+slug: openstax-university-physics-volume-3
+locale: de
+kind: book
+title: University Physics Volume 3
+authors:
+  - Samuel J. Ling
+  - Jeff Sanny
+  - William Moebs
+year: 2016
+publisher: OpenStax, Rice University, Houston, Texas; Originalausgabe
+url: https://openstax.org/details/books/university-physics-volume-3
+identifiers:
+  isbn_digital: 978-1-947172-22-7
+  isbn_print_hardcover: 978-1-938168-18-5
+  edition: Original publication 2016
+summary: Universitäres Lehrbuch zu Optik und moderner Physik; verwendet werden die Abschnitte 6.2, 6.3 und 6.6.
+limits: Lehrbuchquelle für Photoeffekt, Photonenergie und -impuls sowie die begrenzte Reichweite klassischer Modelle; keine vollständige Quantisierung des elektromagnetischen Feldes.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

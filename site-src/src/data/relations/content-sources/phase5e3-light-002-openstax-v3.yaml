@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-002-openstax-v3
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-openstax-university-physics-v3
+role: supports
+claimUids: [claim-light-frequency-wavelength-photon-energy]
+locator: '§6.2, Gl. (6.13); §6.3, Gl. (6.19)–(6.20).'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

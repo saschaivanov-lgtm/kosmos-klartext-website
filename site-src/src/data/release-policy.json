@@ -25,6 +25,7 @@
     ],
     "topics": [
       "topic-halbleiter-led",
+      "topic-licht-photonen",
       "topic-energieerhaltung",
       "topic-magnetismus",
       "topic-quanteninformation",
@@ -32,6 +33,7 @@
     ],
     "knowledge": [
       "knowledge-halbleiter-led",
+      "knowledge-licht",
       "knowledge-eisen-kupfer-magnetismus",
       "knowledge-batterie-lampe",
       "knowledge-quanteninformation"
@@ -65,7 +67,13 @@
       "source-bennett-1993-teleportation",
       "source-wootters-zurek-1982-no-cloning",
       "source-ekert-1991-qkd",
-      "source-shor-preskill-2000-bb84"
+      "source-shor-preskill-2000-bb84",
+      "source-openstax-university-physics-v2",
+      "source-openstax-university-physics-v3",
+      "source-zwiebach-2013-photon-states",
+      "source-dirac-1927-emission-absorption",
+      "source-grangier-roger-aspect-1986",
+      "source-pdg-2024-photon-listing"
     ],
     "learningPaths": [],
     "projects": [],

@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-009-zwiebach
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-zwiebach-2013-photon-states
+role: supports
+claimUids: [claim-light-classical-quantum-field-bridge]
+locator: '§5.3, PDF-/Dokument-S. 48–50, Gl. (5.37)–(5.51), besonders Text nach Gl. (5.43) und Gl. (5.47)–(5.51) zum klassischen Feldgrenzfall kohärenter Zustände.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

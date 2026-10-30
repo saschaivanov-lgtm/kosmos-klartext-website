@@ -48,11 +48,11 @@ for (const record of records) {
   else byUid.set(data.uid, record);
 
   const releasePageTypes = new Set(['theme_world', 'topic', 'knowledge', 'video', 'source_canonical']);
-  if (releasePageTypes.has(data.type) && (data.visibility !== 'public' || data.workflowState !== 'approved')) {
+  if (releasePageTypes.has(data.type) && data.visibility === 'public' && data.workflowState !== 'approved') {
     errors.push(`${data.uid}: veröffentlichte Seite ist nicht freigegeben`);
   }
-  if (releasePageTypes.has(data.type) && (data.review?.scientific?.status !== 'passed' || data.review?.editorial?.status !== 'passed')) {
-    errors.push(`${data.uid}: wissenschaftliche oder redaktionelle Seitenfreigabe fehlt`);
+  if (data.workflowState === 'approved' && (data.review?.scientific?.status !== 'passed' || data.review?.editorial?.status !== 'passed')) {
+    errors.push(`${data.uid}: wissenschaftliche oder redaktionelle Freigabe fehlt`);
   }
 }
 
@@ -68,17 +68,44 @@ for (const { data } of records) {
   if (data.type === 'content_source') {
     if (!has(data.contentUid) || !has(data.sourceUid)) errors.push(`${data.uid}: Inhalt oder Quelle fehlt`);
     for (const uid of data.claimUids ?? []) if (!has(uid)) errors.push(`${data.uid}: unbekannter Claim ${uid}`);
+    if (!data.locator?.trim()) errors.push(`${data.uid}: Locator fehlt`);
+    if (data.contentUid?.startsWith('claim-') && !(data.claimUids ?? []).includes(data.contentUid)) {
+      errors.push(`${data.uid}: direkte Claim-Quellen-Relation muss ihren Claim in claimUids führen`);
+    }
   }
+}
+
+const sourceUrls = new Map();
+const sourceDois = new Map();
+for (const { data } of records.filter(({ data }) => data.type === 'source_canonical')) {
+  const normalizedUrl = data.url?.trim().toLowerCase();
+  if (normalizedUrl) {
+    if (sourceUrls.has(normalizedUrl)) errors.push(`${data.uid}: Quellen-URL dupliziert ${sourceUrls.get(normalizedUrl)}`);
+    else sourceUrls.set(normalizedUrl, data.uid);
+  }
+  for (const [key, value] of Object.entries(data.identifiers ?? {})) {
+    if (!key.toLowerCase().startsWith('doi')) continue;
+    const normalizedDoi = String(value).trim().toLowerCase().replace(/^https?:\/\/(dx\.)?doi\.org\//, '');
+    if (sourceDois.has(normalizedDoi)) errors.push(`${data.uid}: DOI dupliziert ${sourceDois.get(normalizedDoi)}`);
+    else sourceDois.set(normalizedDoi, data.uid);
+  }
+}
+
+const relationSignatures = new Map();
+for (const { data } of records.filter(({ data }) => data.type === 'content_source')) {
+  const signature = `${data.contentUid}|${data.sourceUid}|${data.role}|${[...(data.claimUids ?? [])].sort().join(',')}`;
+  if (relationSignatures.has(signature)) errors.push(`${data.uid}: doppelte Relationssignatur ${relationSignatures.get(signature)}`);
+  else relationSignatures.set(signature, data.uid);
 }
 
 const countType = (type) => records.filter(({ data }) => data.type === type).length;
 const expected = {
   theme_world: 4,
-  topic: 5,
-  knowledge: 4,
+  topic: 6,
+  knowledge: 5,
   video: 4,
-  source_canonical: 23,
-  claim: 23,
+  source_canonical: 29,
+  claim: 32,
   learning_path: 0,
   research_project: 0,
   cooperation: 0,
@@ -92,7 +119,7 @@ const supportedClaims = new Set(records.filter(({ data }) => data.type === 'cont
 for (const { data } of records.filter(({ data }) => data.type === 'claim' && data.scientificCore)) {
   if (!supportedClaims.has(data.uid)) errors.push(`${data.uid}: wissenschaftliche Kernaussage ohne Quellenbeziehung`);
 }
-if (supportedClaims.size !== 23) errors.push(`Release-Gate: 23 belegte Claims erwartet, gefunden ${supportedClaims.size}`);
+if (supportedClaims.size !== 32) errors.push(`Daten-Gate: 32 belegte Claims erwartet, gefunden ${supportedClaims.size}`);
 
 const policy = JSON.parse(fs.readFileSync(path.join(root, 'src', 'data', 'release-policy.json'), 'utf8'));
 if (policy.globalRobotsLock !== null) errors.push('Phase 4E.2: Globale Robots-Sperre muss aufgehoben sein');

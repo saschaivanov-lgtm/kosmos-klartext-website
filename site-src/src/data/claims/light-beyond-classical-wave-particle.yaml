@@ -1,0 +1,12 @@
+uid: claim-light-beyond-classical-wave-particle
+type: claim
+contentUid: knowledge-licht
+statement: 'Die beobachteten Eigenschaften von Licht lassen sich weder durch ein rein klassisches Wellenmodell noch durch ein rein klassisches Teilchenmodell vollständig beschreiben. „Welle“ und „Teilchen“ bezeichnen daher keine zwei Zustände, zwischen denen Licht bei einer Beobachtung mechanisch wechselt.'
+scientificCore: true
+scope: Didaktische Einordnung experimenteller Befunde; interpretationsneutral.
+limits: Keine bestimmte Interpretation der Quantenmechanik ableiten. „Welle-Teilchen-Dualismus“ höchstens historisch oder didaktisch einordnen. Photonen nicht als klassische lokale Lichtkügelchen darstellen.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

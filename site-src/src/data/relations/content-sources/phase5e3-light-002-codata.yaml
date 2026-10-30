@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-002-codata
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-codata-2022
+role: definition
+claimUids: [claim-light-frequency-wavelength-photon-energy]
+locator: 'NIST-Tabelle beziehungsweise Wall Chart des CODATA-2022-Datensatzes, Zeilen „speed of light in vacuum“, „Planck constant“ und „elementary charge“; Referenzdatenfunktion, keine physikalische Herleitung.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

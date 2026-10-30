@@ -1,0 +1,20 @@
+uid: source-dirac-1927-emission-absorption
+type: source_canonical
+slug: dirac-1927-emission-absorption
+locale: de
+kind: paper
+title: The Quantum Theory of the Emission and Absorption of Radiation
+authors:
+  - P. A. M. Dirac
+year: 1927
+publisher: Proceedings of the Royal Society of London A 114(767), 243–265
+url: https://doi.org/10.1098/rspa.1927.0039
+identifiers:
+  doi: 10.1098/rspa.1927.0039
+summary: Historische Primärarbeit zur quantisierten Beschreibung des Strahlungsfeldes sowie von Emissions- und Absorptionsprozessen.
+limits: Historischer Beleg; nicht alleinige Quelle für eine moderne Definition des Photons oder für kohärente Zustände.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

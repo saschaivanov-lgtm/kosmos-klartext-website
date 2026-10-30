@@ -1,0 +1,24 @@
+uid: source-openstax-university-physics-v2
+type: source_canonical
+slug: openstax-university-physics-volume-2
+locale: de
+kind: book
+title: University Physics Volume 2
+authors:
+  - Samuel J. Ling
+  - William Moebs
+  - Jeff Sanny
+year: 2016
+publisher: OpenStax, Rice University, Houston, Texas; Originalausgabe
+url: https://openstax.org/details/books/university-physics-volume-2
+identifiers:
+  isbn_digital: 978-1-947172-21-0
+  isbn_print_color: 978-1-938168-16-1
+  edition: Original publication 2016
+summary: Universitäres Lehrbuch zu Thermodynamik, Elektrizität, Magnetismus und elektromagnetischen Wellen; verwendet werden die Abschnitte 16.2 und 16.5.
+limits: Lehrbuchquelle für die klassische elektromagnetische Beschreibung und den Zusammenhang von Frequenz und Wellenlänge; keine Quelle für Feldquantisierung oder Photonenzustände.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

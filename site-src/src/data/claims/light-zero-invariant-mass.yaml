@@ -1,0 +1,12 @@
+uid: claim-light-zero-invariant-mass
+type: claim
+contentUid: knowledge-licht
+statement: 'In der etablierten relativistischen Beschreibung hat ein freies Photon im Vakuum die invariante Masse null. Es kann dennoch Energie und Impuls tragen und bewegt sich im Vakuum mit c.'
+scientificCore: true
+scope: Freies Photon im Vakuum; etablierte relativistische Standardbeschreibung.
+limits: Nicht „wiegt nichts“ formulieren. Keine Aussage über effektive Quasiteilchen in Materie. Die theoretische Aussage m = 0 und experimentelle obere Massengrenzen nicht vermischen.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

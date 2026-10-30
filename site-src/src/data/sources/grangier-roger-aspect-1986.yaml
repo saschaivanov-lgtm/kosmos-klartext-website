@@ -1,0 +1,22 @@
+uid: source-grangier-roger-aspect-1986
+type: source_canonical
+slug: grangier-roger-aspect-1986
+locale: de
+kind: paper
+title: 'Experimental Evidence for a Photon Anticorrelation Effect on a Beam Splitter: A New Light on Single-Photon Interferences'
+authors:
+  - P. Grangier
+  - G. Roger
+  - A. Aspect
+year: 1986
+publisher: Europhysics Letters 1(4), 173–179
+url: https://doi.org/10.1209/0295-5075/1/4/004
+identifiers:
+  doi: 10.1209/0295-5075/1/4/004
+summary: Experimentelle Primärarbeit zu nichtklassischer Antikorrelation am Strahlteiler und Interferenz mit einer getriggerten Einzelphotonenquelle.
+limits: Antikorrelation und Interferenz stammen aus zwei komplementären Konfigurationen; keine gleichzeitige Beobachtung klassischer Wellen- und Teilcheneigenschaften im selben Aufbau.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

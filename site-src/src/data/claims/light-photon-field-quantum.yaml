@@ -1,0 +1,12 @@
+uid: claim-light-photon-field-quantum
+type: claim
+contentUid: knowledge-licht
+statement: 'In der quantisierten Beschreibung eines einzelnen elektromagnetischen Feldmodus entsprechen Zahlzustände \(|n\rangle\) Zuständen mit \(n\) Photonen. Der Einphotonenzustand \(|1\rangle\) trägt gegenüber dem Vakuum ein Energiequant \(\hbar\omega=h\nu\). In diesem Sinn ist ein Photon ein Quant des elektromagnetischen Feldes.'
+scientificCore: true
+scope: Minimale Feldquantisierung; einzelner elektromagnetischer Feldmodus als didaktisches Modell.
+limits: Kein materielles Kügelchen, keine „kleinste lokale Schwingung“ und keine allgemeine Photonenlokalisation. Nullpunktsenergie und Operatorformalismus gehören nicht in den späteren Grundartikel.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

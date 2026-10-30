@@ -1,0 +1,12 @@
+uid: claim-light-photon-momentum
+type: claim
+contentUid: knowledge-licht
+statement: 'Für ein freies Photon im Vakuum gilt für den Betrag des Impulses p = E/c = h/λ; bei Wechselwirkungen kann dieser Impuls auf Materie übertragen werden.'
+scientificCore: true
+scope: Freies Photon im Vakuum und knapper Wechselwirkungskontext.
+limits: Keine Strahlungsdruckherleitung, kein Abraham-Minkowski- oder anderer Medienimpuls und keine Vertiefung zu Solarsegeln oder optischen Pinzetten.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

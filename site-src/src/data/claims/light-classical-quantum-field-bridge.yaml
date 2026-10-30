@@ -1,0 +1,12 @@
+uid: claim-light-classical-quantum-field-bridge
+type: claim
+contentUid: knowledge-licht
+statement: 'Klassische Feld- und Photonenbeschreibung beziehen sich auf dasselbe elektromagnetische Feld: Feldmoden werden quantisiert, und bestimmte Quantenzustände – insbesondere kohärente Zustände mit vielen Photonen – besitzen einen klassischen Feldgrenzfall.'
+scientificCore: true
+scope: Einmodenbeispiel als kontrollierte Brücke zwischen klassischer und quantisierter Beschreibung.
+limits: Nicht jeder klassische Zustand ist exakt ein kohärenter Einmodenzustand; keine zwei ontologischen Substanzen und keine vollständige QED-Herleitung.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

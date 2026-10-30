@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-006-grangier
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-grangier-roger-aspect-1986
+role: supports
+claimUids: [claim-light-grangier-anticorrelation-interference]
+locator: 'Abstract; S. 174–177, Abb. 1–2 und Gl. (1)–(8) zur Antikorrelation; S. 177–179, Abb. 3–5 zur separat konfigurierten Mach-Zehnder-Interferenz und Sichtbarkeit über 98 %.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

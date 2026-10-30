@@ -1,0 +1,12 @@
+uid: claim-light-frequency-wavelength-photon-energy
+type: claim
+contentUid: knowledge-licht
+statement: 'Für monochromatische elektromagnetische Strahlung im Vakuum gilt c = λν. Ein Photon dieser Frequenz trägt die Energie E = hν = hc/λ.'
+scientificCore: true
+scope: Monochromatische Strahlung beziehungsweise klar definierter Modus im Vakuum.
+limits: Wellenlänge und Frequenz sind Wellengrößen; die Energiebeziehung macht daraus kein klassisches Kügelchen. Materialausbreitung und Pulse mit Bandbreite bleiben außen vor.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

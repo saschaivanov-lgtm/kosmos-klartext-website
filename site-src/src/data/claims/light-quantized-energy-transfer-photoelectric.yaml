@@ -1,0 +1,12 @@
+uid: claim-light-quantized-energy-transfer-photoelectric
+type: claim
+contentUid: knowledge-licht
+statement: 'Bei Emission und Absorption von Licht treten Energieüberträge in diskreten Quanten auf; im Photoeffekt wird die Energie eines Photons hν auf ein Elektron übertragen.'
+scientificCore: true
+scope: Photoeffekt als konkretes Wechselwirkungsbeispiel; quantisierte Energieübertragung.
+limits: Nicht verallgemeinern zu „ein klassisches Feld besteht aus kleinen Energiepaketen“; Detektor und Materie sind Teil des Prozesses.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

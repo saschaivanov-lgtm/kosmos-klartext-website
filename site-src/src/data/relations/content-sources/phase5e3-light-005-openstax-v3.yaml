@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-005-openstax-v3
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-openstax-university-physics-v3
+role: supports
+claimUids: [claim-light-beyond-classical-wave-particle]
+locator: '§6.6, Anfang bis Abb. 6.23 zur experimentabhängigen Nützlichkeit und begrenzten Reichweite von Wellen- und Photonensprache.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

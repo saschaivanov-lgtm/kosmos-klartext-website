@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-007-openstax-v3
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-openstax-university-physics-v3
+role: supports
+claimUids: [claim-light-zero-invariant-mass]
+locator: '§6.3 „Momentum of a Photon“, Gl. (6.17)–(6.20), insbesondere die relativistische Energie-Impuls-Beziehung und m0 = 0 für das Photon.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

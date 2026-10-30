@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-004-zwiebach
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-zwiebach-2013-photon-states
+role: supports
+claimUids: [claim-light-photon-field-quantum]
+locator: '§5.3 „Photon states“, PDF-/Dokument-S. 48–50, Gl. (5.37)–(5.46), insbesondere Text nach Gl. (5.43).'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

@@ -1,0 +1,12 @@
+uid: claim-light-grangier-anticorrelation-interference
+type: claim
+contentUid: knowledge-licht
+statement: 'In dem getriggerten Einzelphotonenaufbau von Grangier, Roger und Aspect zeigten die Detektionen an einem Strahlteiler eine nichtklassische Antikorrelation. In einem separat konfigurierten Mach-Zehnder-Interferometer mit derselben Quelle zeigten die gemessenen Zählraten Interferenzfransen mit einer Sichtbarkeit von über 98 Prozent.'
+scientificCore: true
+scope: Genau die 1986 publizierten, komplementär konfigurierten Aufbauten und ihre Zählstatistik.
+limits: Antikorrelation und Interferenz stammen aus zwei komplementären Konfigurationen. Nicht als Doppelspaltversuch umformulieren und nicht behaupten, beide Beobachtungen seien gleichzeitig im selben Aufbau gemessen worden. Die Quelle nähert einen idealen Einzelphotonenzustand an.
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }

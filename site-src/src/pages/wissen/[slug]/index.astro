@@ -5,24 +5,54 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import ReviewStamp from '@/components/ReviewStamp.astro';
 import SourceBlock from '@/components/SourceBlock.astro';
 import RelatedContent from '@/components/RelatedContent.astro';
-import { loadGraph } from '@/lib/graph';
+import { loadGraph, type GraphEntry } from '@/lib/graph';
+import { isPreviewIncluded } from '@/lib/internal-preview';
 import { isReleased } from '@/lib/release-policy';
 
 export async function getStaticPaths() {
-  const entries = await getCollection('knowledge', ({ data }) => isReleased('knowledge', data.uid));
+  const entries = await getCollection('knowledge', ({ data }) => isPreviewIncluded('knowledge', data.uid));
   return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
 }
 
 const { entry } = Astro.props;
 const { Content, headings } = await render(entry);
-const graph = await loadGraph();
-const sourceItems = graph.sourcesFor(entry.data.uid);
-const related = graph.linked(entry.data.uid);
+const preview = !isReleased('knowledge', entry.data.uid);
+const graph = await loadGraph({ includeInternal: preview });
+const claimIds = new Set(entry.data.claimIds);
+const rawSourceItems = graph.sourcesFor(entry.data.uid).filter(({ relation }) => !preview || (
+  relation.data.workflowState === 'approved' && relation.data.claimUids.some((uid: string) => claimIds.has(uid))
+));
+const sourceItems = preview ? [...rawSourceItems.reduce((groups, item) => {
+  const key = item.source.data.uid;
+  const group = groups.get(key) ?? { source: item.source, relations: [] as GraphEntry[] };
+  group.relations.push(item.relation);
+  groups.set(key, group);
+  return groups;
+}, new Map<string, { source: GraphEntry; relations: GraphEntry[] }>()).values()].map(({ source, relations }) => {
+  const roles = new Set(relations.map((relation) => relation.data.role));
+  const publicRoleLabel = source.data.uid === 'source-codata-2022'
+    ? 'Referenzdaten'
+    : roles.has('limitation')
+      ? 'Begrenzung/Gegenprüfung'
+      : roles.size === 1 && roles.has('background')
+        ? 'Hintergrund'
+        : 'Trägt Aussage';
+  const relation = {
+    ...relations[0],
+    data: {
+      ...relations[0].data,
+      locator: [...new Set(relations.map((entry) => entry.data.locator))].join(' · ')
+    }
+  } as GraphEntry;
+  return { source, relation, publicRoleLabel };
+}) : rawSourceItems;
+const related = preview ? [] : graph.linked(entry.data.uid);
 const updated = new Intl.DateTimeFormat('de-DE', { dateStyle: 'long' }).format(new Date(`${entry.data.updatedAt}T12:00:00Z`));
 ---
 
 <BaseLayout title={entry.data.title} seoTitle={entry.data.seoTitle} description={entry.data.summary} image={entry.data.heroImage?.src} pageType="article">
-  {entry.data.uid === 'knowledge-halbleiter-led' && <style is:inline>.equation{margin:1.5rem 0;padding:1rem 1.25rem;overflow-x:auto;border-left:4px solid var(--cyan);background:var(--paper-strong);font-family:var(--font-serif);font-size:clamp(1.2rem,4vw,1.55rem);text-align:center}</style>}
+  {(entry.data.uid === 'knowledge-halbleiter-led' || entry.data.uid === 'knowledge-licht') && <style is:inline>.equation{margin:1.5rem 0;padding:1rem 1.25rem;overflow-x:auto;border-left:4px solid var(--cyan);background:var(--paper-strong);font-family:var(--font-serif);font-size:clamp(1.2rem,4vw,1.55rem);text-align:center}</style>}
+  {entry.data.uid === 'knowledge-licht' && <style is:inline>.article-links{display:grid;gap:.65rem;margin:1.5rem 0;padding:0;list-style:none}.article-links a{display:block;padding:.85rem 1rem;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--paper-strong);font-weight:700;text-decoration:none}</style>}
   <header class="page-hero">
     <div class="page-hero-inner shell">
       <Breadcrumbs items={[{ label: 'Start', href: '/' }, { label: 'Wissen', href: '/wissen/' }, { label: entry.data.title }]} />

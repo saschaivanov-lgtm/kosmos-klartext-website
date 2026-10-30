@@ -1,0 +1,12 @@
+uid: cs-phase5e3-light-004-dirac
+type: content_source
+contentUid: knowledge-licht
+sourceUid: source-dirac-1927-emission-absorption
+role: background
+claimUids: [claim-light-photon-field-quantum]
+locator: '§1 „Introduction and Summary“, gedruckte S. 244–245; nur historische Feldquantisierungsfunktion, nicht alleinige tragende Quelle der modernen Formulierung.'
+workflowState: approved
+visibility: public
+review:
+  scientific: { status: passed, reviewer: Sascha, date: '2026-10-29' }
+  editorial: { status: passed, reviewer: Sascha, date: '2026-10-29' }
